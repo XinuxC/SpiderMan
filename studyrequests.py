@@ -39,9 +39,11 @@ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.3
 
 s = requests.Session()
 r = s.get('https://github.com/timeline.json')
+r1 = s.post('https://github.com/timeline.json')
 print(r.text)
-print(r.content)
-print(r.cookies)
+print(r1.text)
+# print(r.content)
+# print(r.cookies)
 
 
 r=requests.get('https://github.com/timeline.json')
