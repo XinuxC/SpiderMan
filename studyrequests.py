@@ -58,5 +58,3 @@ print(r.status_code)
 # data = json.loads(r.text)
 # print(data == r.json())
 
-#http://cn.python-requests.org/zh_CN/latest/user/quickstart.html
-#http://www.cnblogs.com/puyangsky/p/5326384.html

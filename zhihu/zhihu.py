@@ -8,89 +8,127 @@
 
 
 import requests
-
-# url='https://www.zhihu.com/login/email'
-#
-# login_data={
-#     '_xsrf': '33383531316231362d363736662d343161382d383833622d376438373239633233393237',
-#     'password' : 'yaojing0129',
-#     'remember_me': 'true',
-#      'email': 'pishit2009@gmail.com',
-#     }
-# headers = { 'Host': 'www.zhihu.com',
-#             'Connection': 'keep-alive',
-#             'Content-Length': '215',
-#             'Accept': '*/*',
-#             'Origin': 'https://www.zhihu.com',
-#             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
-#             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-#             'Referer': 'https://www.zhihu.com/',
-#             'Accept-Encoding': 'gzip, deflate, br',
-#             'Accept-Language': 'zh-CN,zh;q=0.8'
-#            }
-#
-# s=requests.session()
-# r=s.post(url,headers,login_data)
-# print(r.status_code)
-# print(r.text)
-
-import requests
+try:
+    import cookielib
+except:
+    import http.cookiejar as cookielib
 import re
+import time
+import os.path
+try:
+    from PIL import Image
+except:
+    pass
 
-def getContent(url):
-#使用requests.get获取知乎首页的内容
-    r = requests.get(url)
-#request.get().content是爬到的网页的全部内容
-    return r.content
 
-#获取_xsrf标签的值
-def getXSRF(url):
-#获取知乎首页的内容
-    content = getContent(url)
-#正则表达式的匹配模式
-    pattern = re.compile(r'.*?<input type="hidden" name="_xsrf" value="(.*?)"/>.*?')
-#re.findall查找所有匹配的字符串
-    match = re.findall(pattern, content)
-    xsrf = match[0]
-#返回_xsrf的值
-    return xsrf
+base_url = "https://www.zhihu.com"
 
-#登录的主方法
-def login(baseurl,email,password):
-#post需要的表单数据，类型为字典
-    login_data = {
-            '_xsrf': getXSRF(baseurl),
-            'password': password,
-            'remember_me': 'true',
-            'email': email,
-    }
-#设置头信息
-    headers_base = {
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-        'Accept-Encoding': 'gzip, deflate, sdch',
-        'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4,zh-TW;q=0.2',
-        'Connection': 'keep-alive',
+# 构造 Request headers
+base_headers = {
         'Host': 'www.zhihu.com',
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36',
-        'Referer': 'http://www.zhihu.com/',
+        # 'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+        'User-Agent': 'User-Agent:Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5',
+        'Referer': 'https://www.zhihu.com/',
     }
-#使用seesion登录，这样的好处是可以在接下来的访问中可以保留登录信息
-    session = requests.session()
-#登录的URL
-    baseurl += "/login/email"
-#requests 的session登录，以post方式，参数分别为url、headers、data
-    content = session.post(baseurl, headers = headers_base, data = login_data)
-#成功登录后输出为 {"r":0,
-#"msg": "\u767b\u9646\u6210\u529f"
-#}
-    print(content.text)
-#再次使用session以get去访问知乎首页，一定要设置verify = False，否则会访问失败
-    s = session.get("http://www.zhihu.com", verify = False)
-    print(s.text.encode('utf-8'))
-#把爬下来的知乎首页写到文本中
-    f = open('zhihu.txt', 'w')
-    f.write(s.text.encode('utf-8'))
+# # 使用登录cookie信息
+session = requests.Session()
+session.cookies = cookielib.LWPCookieJar(filename='cookies')
+try:
+    session.cookies.load(ingore_discard=True)
+except:
+    print('Cookie 未能加载')
 
-url = "http://www.zhihu.com"
-#进行登录，将星号替换成你的知乎登录邮箱和密码即可
-login(url,"pishit2009@gmail.com","yaojing0129")
+# 获取登录时需要用到的_xsrf
+def getXSRF():
+    index_url = 'https://www.zhihu.com'
+    r = session.get(url=index_url,headers=base_headers)
+    print(r.text)
+    # get_xsrf
+    s = str(r.cookies)
+    # print(type(s))
+    # print('cookie:', s)
+    pattern = r'_xsrf=(.*?) for'
+    xsrf = re.findall(pattern, s, re.S | re.I)
+    # print(type(_xsrf))
+    # print('_xsrf:', _xsrf)
+    _xsrf = xsrf[0]
+    return _xsrf
+
+# # 获取验证码
+def get_captcha():
+    t = str(int(time.time() * 1000))
+    captcha_url='https://www.zhihu.com/captcha.gif?r=' + t + "&type=login"
+    r = session.get(captcha_url,headers=base_headers)
+    with open('captcha.jpg','wb') as f :
+        f.write(r.content)
+    try:
+        im = Image.open('captcha.jpg')
+        im.show()
+        im.close()
+    except:
+        print(u'请到 %s 目录找到captcha.jpg 手动输入' % os.path.abspath('captcha.jpg'))
+    captcha = input('请输入验证码:')
+    return captcha
+
+
+def  isLogin():
+    # 通过查看用户个人信息来判断是否已经登录
+    url = "https://www.zhihu.com/settings/profile"
+    status_code =  session.get(url,headers=base_headers,allow_redirects=False).status_code
+    if status_code == 200 :
+        return  True
+    else:
+        return False
+
+def login(account,password):
+    _xsrf = getXSRF()
+    base_headers["X-Xsrftoken"] = _xsrf
+    base_headers["X-Requested-With"] = "XMLHttpRequest"
+    # 通过输入的用户名判断是否是手机号
+    if re.match(r'1\d{10}$',account):
+        print("手机号登录\n")
+        post_url = "https://www.zhihu.com/login/phone_num"
+        post_data = {
+            '_xsrf': _xsrf,
+            'password': password,
+            'phone_num': account,
+        }
+    else:
+        if '@' in account :
+            print("邮箱登录\n")
+        else:
+            print("输入账号有问题,重新登录")
+            return 0
+        post_url = "https://www.zhihu.com/login/email"
+        post_data = {
+        '_xsrf': _xsrf,
+        'password': password,
+        'email': account,
+        }
+    # 不需要验证码直接登录成功
+    login_page = session.post(post_url,post_data,base_headers)
+    login_code = login_page.json()
+    if login_code['r'] == 1:
+        # 不输入验证码登录失败
+        # 使用需要输入验证码的方式登录
+        post_data["captcha"] = get_captcha()
+        login_page = session.post(post_url,post_data,base_headers)
+        login_code = login_page.json()
+        print(login_code['msg'])
+        # 保存 cookies 到文件，
+        # 下次可以使用 cookie 直接登录，不需要输入账号和密码
+    session.cookies.save()
+
+try:
+    input = input()
+except:
+    pass
+
+if __name__ == '__main__':
+    if isLogin():
+        print("已登录")
+    else:
+        account = input("输入用户名:")
+        password = input("输入密码:")
+        login(account,password)
+
