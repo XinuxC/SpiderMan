@@ -30,7 +30,7 @@ base_headers = {
         'User-Agent': 'User-Agent:Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5',
         'Referer': 'https://www.zhihu.com/',
     }
-# # 使用登录cookie信息
+# 使用登录cookie信息
 session = requests.Session()
 session.cookies = cookielib.LWPCookieJar(filename='cookies')
 try:
