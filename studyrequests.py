@@ -112,3 +112,5 @@ print(r.status_code)
 print(r.history)
 #如果你使用了 HEAD，你也可以启用重定向：
 r = requests.head('http://github.com', allow_redirects=True)
+
+
