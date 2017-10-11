@@ -8,7 +8,6 @@
 # @Desc  :
 
 
-
 from city import city
 import requests
 import json
@@ -16,10 +15,9 @@ import json
 #     print(k,':',v)
 
 
-
 def queryWeather():
     cityName = input('请输入城市名:\n')
-    cityCode=city.get(cityName)
+    cityCode = city.get(cityName)
     if cityCode:
         try:
             url = 'http://d1.weather.com.cn/dingzhi/%s.html' % cityCode
@@ -28,7 +26,7 @@ def queryWeather():
                 'Referer': 'http://www.weather.com.cn',
                 'Host': 'd1.weather.com.cn'
             }
-            req = requests.get(url, headers=urlHeaders,timeout=5)
+            req = requests.get(url, headers=urlHeaders, timeout=5)
             req.encoding = 'utf8'
             # print(req.text)
             # print(type(req.text))
@@ -42,14 +40,13 @@ def queryWeather():
             result = data['weatherinfo']
             # print(result)
             # print(type(result))
-            city_temp = ('%s\n%s°C ~%s°C\n%s') % (result['cityname'],result['tempn'], result['temp'], result['weather'])
-            # print(city_temp)
+            city_temp = ('%s\n%s°C ~%s°C\n%s') % (
+                result['cityname'], result['tempn'], result['temp'], result['weather'])
+            print(city_temp)
         except:
             print('查询失败')
     else:
         print('没有找到该城市')
-
-
 
 
 if __name__ == '__main__':
