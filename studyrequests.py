@@ -13,29 +13,29 @@ import requests
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) '
                          'Chrome/51.0.2704.63 Safari/537.36'}
 #基本POST请求,对于 POST 请求来说，我们一般需要为它增加一些参数。那么最基本的传参方法可以利用 data 这个参数。
-# payload = {'key1': 'value1', 'key2': 'value2'}
-# r = requests.post("http://httpbin.org/post", data=payload)
+payload = {'key1': 'value1', 'key2': 'value2'}
+r = requests.post("http://httpbin.org/post", data=payload)
+print(r.text)
+
+#会话对象:我们需要保持一个持久的会话怎么办
+url='https://www.zhihu.com'
+s = requests.Session()
+r = s.get(url)
+print(type(r))
+print(r.status_code)
+print(r.cookies)
 # print(r.text)
-#
-# #会话对象:我们需要保持一个持久的会话怎么办
-# url='https://www.zhihu.com'
-# s = requests.Session()
-# r = s.get(url)
-# print(type(r))
-# print(r.status_code)
-# print(r.cookies)
-# # print(r.text)
-#
-# #SSL证书验证 verify=False/True
-# r = requests.get('https://kyfw.12306.cn/otn/', verify=False)
-# print(r.cookies)
-#
-# #代理 如果需要使用代理，你可以通过为任意请求方法提供 proxies 参数来配置单个请求
-# proxies = {
-#   "https": "http://41.118.132.69:4433"
-# }
-# r = requests.post("http://httpbin.org/post", proxies=proxies)
-# print(r.text)
+
+#SSL证书验证 verify=False/True
+r = requests.get('https://kyfw.12306.cn/otn/', verify=False)
+print(r.cookies)
+
+#代理 如果需要使用代理，你可以通过为任意请求方法提供 proxies 参数来配置单个请求
+proxies = {
+  "https": "http://41.118.132.69:4433"
+}
+r = requests.post("http://httpbin.org/post", proxies=proxies)
+print(r.text)
 
 s = requests.Session()
 r = s.get('https://github.com/timeline.json')
@@ -56,20 +56,20 @@ r = requests.get('https://github.com/timeline.json')
 # print(r.encoding)
 
 #二进制响应内容
-# print(r.content)
+print(r.content)
 #Requests 会自动为你解码 gzip 和 deflate 传输编码的响应数据。
 #例如，以请求返回的二进制数据创建一张图片，你可以使用如下代码：
-# from PIL import Image
-# from io import BytesIO
-# i = Image.open(BytesIO(r.content))
+from PIL import Image
+from io import BytesIO
+i = Image.open(BytesIO(r.content))
 
 
-# with open('test.txt', 'wb') as fd:
-#     for chunk in r.iter_lines():
-#         fd.write(chunk)
-#
-# for chunk in r.iter_lines():
-#         print(chunk)
+with open('test.txt', 'wb') as fd:
+    for chunk in r.iter_lines():
+        fd.write(chunk)
+
+for chunk in r.iter_lines():
+        print(chunk)
 
 
 #POST一个多部分编码(Multipart-Encoded)的文件
