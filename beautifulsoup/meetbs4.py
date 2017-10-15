@@ -14,15 +14,15 @@ from bs4 import BeautifulSoup
 #Section 1 first meet BeautifulSoup
 
 url = 'http://www.pythonscraping.com/pages/page1.html'
-# html = urlopen(url)
-# print(type(html))
-# # print(type(html.read()))
-# bsObj = BeautifulSoup(html.read(),'html.parser')
-# print(bsObj)
-# #提取标签
-# print(bsObj.h1)
-# print(bsObj.html.head.title)
-# print(bsObj.html.body.div)
+html = urlopen(url)
+print(type(html))
+# print(type(html.read()))
+bsObj = BeautifulSoup(html.read(),'html.parser')
+print(bsObj)
+#提取标签
+print(bsObj.h1)
+print(bsObj.html.head.title)
+print(bsObj.html.body.div)
 
 #可靠的连接
 def getTile(url):

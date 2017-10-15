@@ -6,7 +6,7 @@
 # @Contact:pishit2009@gmail.com
 # @Date  : 2017/10/12
 # @Desc  :
-
+from urllib.request import urlopen
 import requests
 from bs4 import  BeautifulSoup
 
@@ -28,7 +28,7 @@ for name in nameList:
 # 以前urllib.request的实现方法
 # r = urlopen(url)
 # print(type(r))
-# bsObj = BeautifulSoup(r.text,"html.parser")
+# bsObj = BeautifulSoup(r,"html.parser")
 # nameList = bsObj.findAll("span",{"class":"green"})
 # for name in nameList:
 #     print(name.get_text())
