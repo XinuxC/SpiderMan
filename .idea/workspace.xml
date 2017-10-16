@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b40c6f8b-bc7a-4c6b-a54d-48249c76b9a2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SpiderMan.iml" afterPath="$PROJECT_DIR$/.idea/SpiderMan.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beautifulsoup/navigatingTree.py" afterPath="$PROJECT_DIR$/beautifulsoup/navigatingTree.py" />
-    </list>
+    <list default="true" id="b40c6f8b-bc7a-4c6b-a54d-48249c76b9a2" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +14,7 @@
       <file leaf-file-name="headtobs4.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/beautifulsoup/headtobs4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
+            <state relative-caret-position="495">
               <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="31" />
               <folding>
                 <element signature="e#167#201#0" expanded="true" />
@@ -28,17 +23,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="meetbs4.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="meetbs4.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/beautifulsoup/meetbs4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="723">
-              <caret line="47" column="26" lean-forward="false" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+            <state relative-caret-position="153">
+              <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navigatingTree.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navigatingTree.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/beautifulsoup/navigatingTree.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
@@ -93,8 +88,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="868" />
-    <option name="width" value="1059" />
+    <option name="x" value="807" />
+    <option name="width" value="1120" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -263,13 +258,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="868" y="0" width="1059" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="807" y="0" width="1120" height="1047" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.039309684" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.03713768" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37393162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37393162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -554,9 +548,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/beautifulsoup/navigatingTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding>
+            <element signature="e#189#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/beautifulsoup/headtobs4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
+        <state relative-caret-position="495">
           <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="31" />
           <folding>
             <element signature="e#167#201#0" expanded="true" />
@@ -566,19 +570,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/beautifulsoup/meetbs4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="723">
-          <caret line="47" column="26" lean-forward="false" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+        <state relative-caret-position="153">
+          <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beautifulsoup/navigatingTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-          <folding>
-            <element signature="e#189#204#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
