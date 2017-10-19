@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b40c6f8b-bc7a-4c6b-a54d-48249c76b9a2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beautifulsoup/getalldomain.py" afterPath="$PROJECT_DIR$/beautifulsoup/getalldomain.py" />
-    </list>
+    <list default="true" id="b40c6f8b-bc7a-4c6b-a54d-48249c76b9a2" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +14,7 @@
       <file leaf-file-name="meetbs4.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/beautifulsoup/meetbs4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
+            <state relative-caret-position="347">
               <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
               <folding />
             </state>
@@ -26,7 +24,7 @@
       <file leaf-file-name="headtobs4.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/beautifulsoup/headtobs4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="22">
               <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="32" />
               <folding>
                 <element signature="e#167#201#0" expanded="true" />
@@ -38,7 +36,7 @@
       <file leaf-file-name="SeniorRequests.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SeniorRequests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2024">
+            <state relative-caret-position="809">
               <caret line="92" column="50" lean-forward="false" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="50" />
               <folding />
             </state>
@@ -60,7 +58,7 @@
       <file leaf-file-name="singledomain.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/beautifulsoup/singledomain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-70">
+            <state relative-caret-position="237">
               <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="32" />
               <folding>
                 <element signature="e#229#242#0" expanded="true" />
@@ -69,13 +67,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getalldomain.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getalldomain.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/beautifulsoup/getalldomain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+            <state relative-caret-position="501">
+              <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
               <folding>
                 <element signature="e#372#388#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getLinks.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/beautifulsoup/getLinks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1100">
+              <caret line="65" column="38" lean-forward="false" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+              <folding>
+                <element signature="e#168#202#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getAllLinks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beautifulsoup/getAllLinks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1606">
+              <caret line="73" column="34" lean-forward="false" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="34" />
+              <folding>
+                <element signature="e#170#204#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -123,6 +145,8 @@
         <option value="$PROJECT_DIR$/beautifulsoup/navigatingTree.py" />
         <option value="$PROJECT_DIR$/beautifulsoup/singledomain.py" />
         <option value="$PROJECT_DIR$/beautifulsoup/getalldomain.py" />
+        <option value="$PROJECT_DIR$/beautifulsoup/getLinks.py" />
+        <option value="$PROJECT_DIR$/beautifulsoup/getAllLinks.py" />
       </list>
     </option>
   </component>
@@ -146,7 +170,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,6 +181,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -177,7 +201,41 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.getalldomain">
+  <component name="RunManager" selected="Python.getAllLinks">
+    <configuration name="getAllLinks" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/beautifulsoup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SpiderMan" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/beautifulsoup/getAllLinks.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="getLinks" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/beautifulsoup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SpiderMan" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/beautifulsoup/getLinks.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="getalldomain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -191,40 +249,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="SpiderMan" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/beautifulsoup/getalldomain.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="headtobs4 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/beautifulsoup" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SpiderMan" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/beautifulsoup/headtobs4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="meetbs4 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/beautifulsoup" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SpiderMan" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/beautifulsoup/meetbs4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -264,19 +288,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.headtobs4 (1)" />
-      <item index="1" class="java.lang.String" itemvalue="Python.navigatingTree" />
-      <item index="2" class="java.lang.String" itemvalue="Python.meetbs4 (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.singledomain" />
-      <item index="4" class="java.lang.String" itemvalue="Python.getalldomain" />
+      <item index="0" class="java.lang.String" itemvalue="Python.navigatingTree" />
+      <item index="1" class="java.lang.String" itemvalue="Python.singledomain" />
+      <item index="2" class="java.lang.String" itemvalue="Python.getalldomain" />
+      <item index="3" class="java.lang.String" itemvalue="Python.getLinks" />
+      <item index="4" class="java.lang.String" itemvalue="Python.getAllLinks" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.getalldomain" />
-        <item index="1" class="java.lang.String" itemvalue="Python.singledomain" />
-        <item index="2" class="java.lang.String" itemvalue="Python.navigatingTree" />
-        <item index="3" class="java.lang.String" itemvalue="Python.meetbs4 (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.headtobs4 (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.getAllLinks" />
+        <item index="1" class="java.lang.String" itemvalue="Python.getLinks" />
+        <item index="2" class="java.lang.String" itemvalue="Python.getalldomain" />
+        <item index="3" class="java.lang.String" itemvalue="Python.singledomain" />
+        <item index="4" class="java.lang.String" itemvalue="Python.navigatingTree" />
       </list>
     </recent_temporary>
   </component>
@@ -305,7 +329,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3366228" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3223684" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -330,24 +354,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/beautifulsoup/headtobs4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="e#167#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SeniorRequests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2024">
-          <caret line="92" column="50" lean-forward="false" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/beautifulsoup/navigatingTree.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
@@ -629,6 +635,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/beautifulsoup/meetbs4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beautifulsoup/headtobs4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="e#167#201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SeniorRequests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="809">
+          <caret line="92" column="50" lean-forward="false" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/beautifulsoup/navigatingTree.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
@@ -639,35 +671,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beautifulsoup/meetbs4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beautifulsoup/headtobs4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="e#167#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SeniorRequests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2024">
-          <caret line="92" column="50" lean-forward="false" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/beautifulsoup/singledomain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-70">
+        <state relative-caret-position="237">
           <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="32" />
           <folding>
             <element signature="e#229#242#0" expanded="true" />
@@ -677,10 +683,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/beautifulsoup/getalldomain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+        <state relative-caret-position="501">
+          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
           <folding>
             <element signature="e#372#388#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beautifulsoup/getAllLinks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1606">
+          <caret line="73" column="34" lean-forward="false" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="34" />
+          <folding>
+            <element signature="e#170#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beautifulsoup/getLinks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="65" column="38" lean-forward="false" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+          <folding>
+            <element signature="e#168#202#0" expanded="true" />
           </folding>
         </state>
       </provider>
