@@ -9,6 +9,8 @@
 
 
 from urllib.parse import  urlparse
+from urllib.request import urlopen
+
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -33,11 +35,12 @@ def getInternalLinks(bsObj, includeUrl):
 def getExternalLinks(bsObj,excludeUrl):
     externalLinks = []
     #找出所有以http或www开头且不包含当前url的链接
-    for link in bsObj.findAll("a",href=re.compile("^(http|www)((?!"+excludeUrl+").)*%")):
+    for link in bsObj.findAll("a",href=re.compile("^(http|www)((?!"+excludeUrl+").)*$")):
         if link.attrs['href'] is not None:
             if link.attrs['href'] not in externalLinks:
                 externalLinks.append(link.attrs['href'])
     return externalLinks
+
 
 def splitAddress(address):
     addressParts = address.replace("http://", "").split("/")
@@ -45,13 +48,14 @@ def splitAddress(address):
 
 def getRandomExternalLinks(startingPage):
     r = requests.get(startingPage)
+    # r = urlopen(startingPage)
     bsObj = BeautifulSoup(r.text,"html.parser")
-    externalLinks = getExternalLinks(bsObj,startingPage)
+    externalLinks = getExternalLinks(bsObj,splitAddress(startingPage)[0])
     if len(externalLinks) == 0:
         print("No external links,looking around the site for one")
         domain = urlparse(startingPage).scheme+"://"+urlparse(startingPage).netloc
         internalLinks = getInternalLinks(bsObj,domain)
-        internalLinks = getInternalLinks(bsObj,startingPage)
+        # internalLinks = getInternalLinks(bsObj,domain)
         return getNextExternalLink(internalLinks[random.randint(0, len(internalLinks) - 1)])
 
     else:
@@ -63,14 +67,22 @@ def followExternalOnly(startingSite):
     print("random external link is: "+externalLink)
     followExternalOnly(externalLink)
 
-followExternalOnly("http://oreilly.com")
+# followExternalOnly("http://oreilly.com")
 
-
-# r = requests.get("http://oreilly.com")
-# bsObj = BeautifulSoup(r.text,"html.parser")
-# interlinks = getInternalLinks(bsObj,"http://oreilly.com")
-# print(interlinks)
-# r = requests.get("http://oreilly.com")
-# bsObj = BeautifulSoup(r.text,"html.parser")
-# externallinks = getExternalLinks(bsObj,"http://oreilly.com")
-# print(externallinks)
+#收集网站上发现的所有外链列表
+allExtLinks = set()
+allIntLinks = set()
+def getAllExternalLinks(siteUrl):
+    r = requests.get(siteUrl)
+    bsObj = BeautifulSoup(r.text,'html.parser')
+    internalLinks = getInternalLinks(bsObj,splitAddress(siteUrl)[0])
+    externalLinks = getExternalLinks(bsObj,splitAddress(siteUrl)[0])
+    for link in externalLinks:
+        if link not in allExtLinks:
+            allExtLinks.add(link)
+    for link in internalLinks:
+        if link not in allIntLinks:
+            print("即将获取链接的url是: "+link)
+            allIntLinks.add(link)
+            getAllExternalLinks(link)
+getAllExternalLinks("http://hupu.com")
