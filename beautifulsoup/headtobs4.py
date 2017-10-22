@@ -12,7 +12,8 @@ from bs4 import  BeautifulSoup
 
 url = "http://www.pythonscraping.com/pages/warandpeace.html"
 r = requests.get(url)
-print(type(r.text))
+print(type(r))
+print(r.raw)
 # print(r.status_code)
 print(r.encoding)
 r.encoding='utf-8'
@@ -28,6 +29,7 @@ for name in nameList:
 # 以前urllib.request的实现方法
 # r = urlopen(url)
 # print(type(r))
+# print(r)
 # bsObj = BeautifulSoup(r,"html.parser")
 # nameList = bsObj.findAll("span",{"class":"green"})
 # for name in nameList:
