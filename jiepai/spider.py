@@ -54,10 +54,10 @@ def parse_page_detail(html,url):
     soup = BeautifulSoup(html,'lxml')
     title = soup.select('title')[0].get_text()
     # print(title)
-    image_pattern = re.compile(r'gallery:(.*?);',re.S)
+    image_pattern = re.compile(r'gallery:(.*?)\n', re.S)  # 详情页里图片url都在返回的gallery里,在此提取
     result = re.search(image_pattern,html)
     if result:
-        data = json.loads(result.group(1))
+        data = json.loads(result.group(1).rstrip(','))
         if data and 'sub_images' in data.keys():
             sub_images = data.get('sub_images')
             images = [item.get('url') for item in sub_images]
@@ -67,33 +67,31 @@ def parse_page_detail(html,url):
                 'images':images
             }
 
+# 保存图片
+def save_iamge(urls):
+    for  url in urls:
+        r = requests.get(url)
+        imageName = url.split('/')[-1]+'.jpg'
+        print('downloading ',imageName)
+        with open(imageName,'wb') as f :
+            f.write(r.content)
+        print('...done')
+
+
 def main():
-    html = get_page_index(0,'街拍')
-    for url in parse_page_index(html):
-        html = get_page_detail(url)
+    html = get_page_index(0,'街拍')  # 得到索引页的返回html
+    for url in parse_page_index(html):  # 解析索引页 得到返回的文章url列表
+        html = get_page_detail(url)  # 得到返回的html(跟get_page_index几乎一样,只是函数里url动态传递进去)
         if html:
-            result = parse_page_detail(html,url)
-            print(result)
+            result = parse_page_detail(html,url)  # 得到详情页r.text对象后解析内容,得到json对象 打印输出
+            if result:
+                images_url = result['images']
+                save_iamge(images_url)
 
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    main()
 
-html_init = get_page_index(0,'街拍')
-# print(html_init)
-for url in parse_page_index(html_init):
-    html = get_page_detail(url)
-    # print(html)
-    if html :
-        soup = BeautifulSoup(html,'lxml')
-        title = soup.select('title')[0].get_text()
-        # print(title)
-        image_pattern = re.compile(r'gallery:(.*?)siblingList',re.S)
-        result = re.search(image_pattern,html)
-        if result:
-            s = result.group(1).rstrip(',')
-            print(s)
-            # data = json.loads(result.group(1)[:-1])
-            # if data and 'sub_images' in data.keys():
-            #     sub_images = data.get('sub_images')
-            #     images = [item.get('url') for item in sub_images]
-            #     print(images)
+
+
+
+
