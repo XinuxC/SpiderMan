@@ -33,7 +33,6 @@ def queryWeather():
             content = req.text.partition(';')
             temp_c = content[0]
             temp_data = temp_c.split('=')[1]
-            # print(type(temp_data))
             data = json.loads(temp_data)
             # print(data)
             # print(type(data))
