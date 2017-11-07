@@ -54,10 +54,10 @@ def parse_page_detail(html,url):
     soup = BeautifulSoup(html,'lxml')
     title = soup.select('title')[0].get_text()
     # print(title)
-    image_pattern = re.compile(r'gallery:(.*?)\n', re.S)  # 详情页里图片url都在返回的gallery里,在此提取
+    image_pattern = re.compile(r'gallery:(.*?),\n', re.S)  # 详情页里图片url都在返回的gallery里,在此提取
     result = re.search(image_pattern,html)
     if result:
-        data = json.loads(result.group(1).rstrip(','))
+        data = json.loads(result.group(1))
         if data and 'sub_images' in data.keys():
             sub_images = data.get('sub_images')
             images = [item.get('url') for item in sub_images]
@@ -72,14 +72,14 @@ def save_iamge(urls):
     for  url in urls:
         r = requests.get(url)
         imageName = url.split('/')[-1]+'.jpg'
-        print('downloading ',imageName)
+        print('downloading ',imageName,end='')
         with open(imageName,'wb') as f :
             f.write(r.content)
         print('...done')
 
 
 def main():
-    html = get_page_index(0,'街拍')  # 得到索引页的返回html
+    html = get_page_index(40,'街拍')  # 得到索引页的返回html
     for url in parse_page_index(html):  # 解析索引页 得到返回的文章url列表
         html = get_page_detail(url)  # 得到返回的html(跟get_page_index几乎一样,只是函数里url动态传递进去)
         if html:
