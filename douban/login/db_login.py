@@ -7,7 +7,7 @@
 # @Desc  :
 import os
 import requests
-from HTMLParser import HTMLParser
+# from HTMLParser import HTMLParser
 import re
 from bs4 import BeautifulSoup
 from PIL import Image
@@ -24,7 +24,9 @@ headers ={
 session = requests.Session()
 
 url = 'https://accounts.douban.com/login'
+# url = 'https://www.douban.com/accounts/login'
 movie_url ='https://movie.douban.com/'
+
 
 
 def save(html):
