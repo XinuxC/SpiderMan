@@ -16,7 +16,7 @@ for id in range(0,250,25):
     url = 'https://movie.douban.com/top250?start=' + str(id)
     r = session.get(url)
     r.encoding = 'utf-8'
-    root = etree.HTML(r.content)
+    root = etree.HTML(r.text)
     items  = root.xpath('//ol/li/div[@class="item"]')
     # print(len(items))
     for item in items:
