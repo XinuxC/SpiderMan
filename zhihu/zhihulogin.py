@@ -22,7 +22,7 @@ try:
 except:
     pass
 import json
-from lxml import etree
+
 
 
 
@@ -52,6 +52,7 @@ def getXSRF():
 
 def get_captcha():
     t = str(int(time.time() * 1000))
+    # 手机登录验证码地址
     captcha_url = 'https://www.zhihu.com/captcha.gif?r=' + t + "&type=login"
     image = session.get(captcha_url, headers=headers)
     with open('captcha.jpg', 'wb') as f:
@@ -116,7 +117,9 @@ def get_following():
 
     followees_list=[]
     for page in range(0, 60, 20):
-        url = 'https://www.zhihu.com/api/v4/members/XinuxC/followees?include=data%5B*%5D.answer_count%2Carticles_count%2Cgender%2Cfollower_count%2Cis_followed%2Cis_following%2Cbadge%5B%3F(type%3Dbest_answerer)%5D.topics&' \
+        url = 'https://www.zhihu.com/api/v4/members/XinuxC/followees?' \
+              'include=data%5B*%5D.answer_count%2Carticles_count%2Cgender%2Cfollower_count%2Cis_followed' \
+              '%2Cis_following%2Cbadge%5B%3F(type%3Dbest_answerer)%5D.topics&' \
                   'offset={}&limit=20'.format(page)
         r = session.get(url, headers=headers)
         r.encoding = 'utf-8'
@@ -134,11 +137,16 @@ if __name__ == '__main__':
         for i in followings:
             print('用户:%s\tHeadline:%s' % (i['name'], i['headline']))
             count += 1
-
         print('关注了 %d 人' %count)
     else:
         account = input("请输入用户名:")
         password = input("请输入密码:")
         login(account,password)
+        followings = get_following()
+        count = 0
+        for i in followings:
+            print('用户:%s\tHeadline:%s' % (i['name'], i['headline']))
+            count += 1
+        print('关注了 %d 人' % count)
 
 
