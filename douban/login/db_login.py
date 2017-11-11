@@ -25,7 +25,8 @@ headers ={
 session = requests.Session()
 
 def login(account,password):
-    url = 'https://accounts.douban.com/login'
+    # url = 'https://accounts.douban.com/login'
+    url = 'https://www.douban.com/accounts/login'
     postdata = {
 
         'redir' : 'https://www.douban.com',
@@ -61,18 +62,21 @@ def login(account,password):
         print('登录失败')
 
 def get_movieCollect():
-    collect_url = 'https://movie.douban.com/mine?status=collect'
-    r = session.get(collect_url)
-    data = etree.HTML(r.text)
-    names = data.xpath('//ul/li[@class="title"]/a/em/text()')
-    print(names)
-    ahrefs = data.xpath('//ul/li[@class="title"]/a')
-    href = []
-    for link in ahrefs:
-        href.append(link.items()[0][1])
-    print(href)
-    for i in range(len(href)):
-        print('电影名:{0} ,链接:{1}'.format(names[i],href[i]))
+    for index in range(0,30,15):
+        collect_url = 'https://movie.douban.com/people/33958460/collect?start=%d' \
+                      '&sort=time&rating=all&filter=all&mode=grid' % index
+        r = session.get(collect_url)
+        data = etree.HTML(r.text)
+        items = data.xpath('//div[@class="item"]')
+        names = data.xpath('//ul/li[@class="title"]/a/em/text()')
+        # print(names)
+        ahrefs = data.xpath('//ul/li[@class="title"]/a')
+        href = []
+        for link in ahrefs:
+            href.append(link.items()[0][1])
+        # print(href)
+        for i in range(len(items)):
+            print('电影名:{0} ,链接:{1}'.format(names[i],href[i]))
 
 
 
