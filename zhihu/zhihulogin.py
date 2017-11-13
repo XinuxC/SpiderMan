@@ -35,9 +35,9 @@ headers = {
 
 session = requests.Session()
 # 从txt文件中获取cookies,json->dict存入session.cookies
-with open("cookies.txt",'r') as f:
-    cookies = json.load(f)
-session.cookies.update(cookies)
+# with open("cookies.txt",'r') as f:
+#     cookies = json.load(f)
+# session.cookies.update(cookies)
 
 
 #获取_xsrf
