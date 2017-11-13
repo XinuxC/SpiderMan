@@ -64,9 +64,11 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'Weather.pipelines.WeatherPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'Weather.pipelines.WeatherPipeline': 500,
+   'Weather.pipelines.W2mysql':300,
+   'Weather.pipelines.W2json' :400
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
