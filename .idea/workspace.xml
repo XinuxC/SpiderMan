@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b40c6f8b-bc7a-4c6b-a54d-48249c76b9a2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sina/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sina/login.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu/img1.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/douban/login/captcha.jpg" afterPath="$PROJECT_DIR$/douban/login/captcha.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhihu/captcha.jpg" afterPath="$PROJECT_DIR$/zhihu/captcha.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SpiderMan.iml" afterPath="$PROJECT_DIR$/.idea/SpiderMan.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/douban/login/db_login.py" afterPath="$PROJECT_DIR$/douban/login/db_login.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhihu/cookies.txt" afterPath="$PROJECT_DIR$/zhihu/cookies.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhihu/login.html" afterPath="$PROJECT_DIR$/zhihu/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhihu/zhihulogin.py" afterPath="$PROJECT_DIR$/zhihu/zhihulogin.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,33 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="weibo_login.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sina/weibo_login.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-              <folding>
-                <element signature="e#168#179#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zhihulogin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zhihu/zhihulogin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1339">
-              <caret line="95" column="33" lean-forward="false" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="douban_movie250.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/douban/movies/douban_movie250.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="24" column="86" lean-forward="true" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="86" />
+            <state relative-caret-position="198">
+              <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="16" />
               <folding>
                 <element signature="e#185#200#0" expanded="true" />
               </folding>
@@ -61,8 +29,8 @@
       <file leaf-file-name="db_login.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/douban/login/db_login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+            <state relative-caret-position="943">
+              <caret line="72" column="59" lean-forward="false" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="59" />
               <folding>
                 <element signature="e#154#163#0" expanded="true" />
               </folding>
@@ -133,25 +101,27 @@
         <option value="$PROJECT_DIR$/beautifulsoup/getLinks.py" />
         <option value="$PROJECT_DIR$/beautifulsoup/scrapySpider.py" />
         <option value="$PROJECT_DIR$/beautifulsoup/wikiSpider/wikiSpider/items.py" />
-        <option value="$PROJECT_DIR$/beautifulsoup/wikiSpider/wikiSpider/spiders/articleSpider.py" />
         <option value="$PROJECT_DIR$/beautifulsoup/douyuimg.py" />
         <option value="$PROJECT_DIR$/beautifulsoup/douyupic.py" />
         <option value="$PROJECT_DIR$/jiepai/strhandle.py" />
         <option value="$PROJECT_DIR$/jiepai/spider.py" />
         <option value="$PROJECT_DIR$/zhihu/zhihu.py" />
         <option value="$PROJECT_DIR$/zhihu/login.py" />
-        <option value="$PROJECT_DIR$/douban/movies/douban_movie250.py" />
         <option value="$PROJECT_DIR$/zhihu/test.py" />
         <option value="$PROJECT_DIR$/sina/login.py" />
         <option value="$PROJECT_DIR$/sina/weibo_login.py" />
         <option value="$PROJECT_DIR$/zhihu/zhihulogin.py" />
+        <option value="$PROJECT_DIR$/beautifulsoup/wikiSpider/wikiSpider/spiders/articleSpider.py" />
+        <option value="$USER_HOME$/OneDrive/julyedu Spider/第5课/julyedu_spider.py" />
+        <option value="$PROJECT_DIR$/douban/movies/douban_movie250.py" />
         <option value="$PROJECT_DIR$/douban/login/db_login.py" />
+        <option value="$USER_HOME$/OneDrive/julyedu Spider/第5课/新建文件夹/blog.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="580" />
-    <option name="width" value="1347" />
+    <option name="x" value="531" />
+    <option name="width" value="1396" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
@@ -169,7 +139,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,16 +146,35 @@
               <item name="SpiderMan" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpiderMan" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SpiderMan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpiderMan" type="462c0819:PsiDirectoryNode" />
+              <item name="beautifulsoup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpiderMan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpiderMan" type="462c0819:PsiDirectoryNode" />
+              <item name="beautifulsoup" type="462c0819:PsiDirectoryNode" />
+              <item name="wikiSpider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpiderMan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpiderMan" type="462c0819:PsiDirectoryNode" />
+              <item name="beautifulsoup" type="462c0819:PsiDirectoryNode" />
+              <item name="wikiSpider" type="462c0819:PsiDirectoryNode" />
+              <item name="wikiSpider" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PythonLinux" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/julyedu Spider/第5课/新建文件夹/news" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -200,7 +188,41 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.db_login">
+  <component name="RunManager" selected="Python.blog">
+    <configuration name="articleSpider" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/beautifulsoup/wikiSpider/wikiSpider/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SpiderMan" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/beautifulsoup/wikiSpider/wikiSpider/spiders/articleSpider.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="blog" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/OneDrive/julyedu Spider/第5课/新建文件夹" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SpiderMan" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/OneDrive/julyedu Spider/第5课/新建文件夹/blog.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="db_login" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -218,53 +240,19 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="login (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="julyedu_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sina" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/OneDrive/julyedu Spider/第5课" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="SpiderMan" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sina/login.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zhihu" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SpiderMan" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zhihu/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="weibo_login" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sina" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SpiderMan" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sina/weibo_login.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/OneDrive/julyedu Spider/第5课/julyedu_spider.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -288,18 +276,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.zhihulogin" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.login (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.weibo_login" />
-      <item index="4" class="java.lang.String" itemvalue="Python.db_login" />
+      <item index="1" class="java.lang.String" itemvalue="Python.db_login" />
+      <item index="2" class="java.lang.String" itemvalue="Python.articleSpider" />
+      <item index="3" class="java.lang.String" itemvalue="Python.julyedu_spider" />
+      <item index="4" class="java.lang.String" itemvalue="Python.blog" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.db_login" />
-        <item index="1" class="java.lang.String" itemvalue="Python.zhihulogin" />
-        <item index="2" class="java.lang.String" itemvalue="Python.weibo_login" />
-        <item index="3" class="java.lang.String" itemvalue="Python.login (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test" />
+        <item index="0" class="java.lang.String" itemvalue="Python.blog" />
+        <item index="1" class="java.lang.String" itemvalue="Python.db_login" />
+        <item index="2" class="java.lang.String" itemvalue="Python.julyedu_spider" />
+        <item index="3" class="java.lang.String" itemvalue="Python.articleSpider" />
+        <item index="4" class="java.lang.String" itemvalue="Python.zhihulogin" />
       </list>
     </recent_temporary>
   </component>
@@ -320,7 +308,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="580" y="0" width="1347" height="1038" extended-state="0" />
+    <frame x="531" y="0" width="1396" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -353,48 +341,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zhihu/zhihulogin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="43" column="11" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/studyrequests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhihu/zhihu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/studyrequests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhihu/zhihu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="50" column="26" lean-forward="false" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/studyrequests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/homecoming.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -511,13 +457,6 @@
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/Scrapy-1.3.3-py3.5.egg/scrapy/spiders/__init__.py" />
     <entry file="file://$PROJECT_DIR$/beautifulsoup/douyuimg.py" />
-    <entry file="file://$PROJECT_DIR$/beautifulsoup/wikiSpider/wikiSpider/spiders/articleSpider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/beautifulsoup/douyupic.py" />
     <entry file="file://$PROJECT_DIR$/beautifulsoup/headtobs4.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -540,13 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beautifulsoup/wikiSpider/wikiSpider/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jiepai/strhandle.py" />
     <entry file="file://$PROJECT_DIR$/getPics/friedeggs_multiThread2.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -566,44 +498,116 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3245">
           <caret line="273" column="32" lean-forward="false" selection-start-line="273" selection-start-column="26" selection-end-line="273" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sina/login.py" />
+    <entry file="file://$PROJECT_DIR$/jdcomment/comment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beautifulsoup/wikiSpider/wikiSpider/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zhihu/test.py">
+    <entry file="file://$PROJECT_DIR$/beautifulsoup/wikiSpider/wikiSpider/spiders/articleSpider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        <state relative-caret-position="242">
+          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding>
+            <element signature="e#216#252#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sina/login.py">
+    <entry file="file://$PROJECT_DIR$/beautifulsoup/wikiSpider/wikiSpider/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        <state relative-caret-position="242">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zhihu/zhihu.py">
+    <entry file="file://$PROJECT_DIR$/beautifulsoup/wikiSpider/wikiSpider/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2198">
-          <caret line="115" column="31" lean-forward="false" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="31" />
+        <state relative-caret-position="176">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beautifulsoup/wikiSpider/wikiSpider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding>
+            <element signature="e#260#273#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/OneDrive/julyedu Spider/第5课/julyedu_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhihu/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zhihu/login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="1210">
           <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+          <folding>
+            <element signature="e#153#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhihu/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding>
+            <element signature="e#150#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhihu/zhihu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2462">
+          <caret line="115" column="31" lean-forward="false" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhihu/zhihulogin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="95" column="33" lean-forward="false" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sina/weibo_login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="323">
           <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
           <folding>
             <element signature="e#168#179#0" expanded="true" />
@@ -611,36 +615,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdcomment/comment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhihu/zhihulogin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1339">
-          <caret line="95" column="33" lean-forward="false" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/douban/movies/douban_movie250.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="86" lean-forward="true" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="86" />
+        <state relative-caret-position="198">
+          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="16" />
           <folding>
             <element signature="e#185#200#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/OneDrive/julyedu Spider/第5课/新建文件夹/blog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/douban/login/db_login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+        <state relative-caret-position="943">
+          <caret line="72" column="59" lean-forward="false" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="59" />
           <folding>
             <element signature="e#154#163#0" expanded="true" />
           </folding>

@@ -25,11 +25,11 @@ headers ={
 session = requests.Session()
 
 def login(account,password):
-    # url = 'https://accounts.douban.com/login'
+        # url = 'https://accounts.douban.com/login'
     url = 'https://www.douban.com/accounts/login'
     postdata = {
 
-        'redir' : 'https://www.douban.com',
+        # 'redir' : 'https://www.douban.com',
         'form_email': account,
         'form_password': password,
         'login' : u'登录'
@@ -70,19 +70,15 @@ def get_movieCollect():
         items = data.xpath('//div[@class="item"]')
         names = data.xpath('//ul/li[@class="title"]/a/em/text()')
         # print(names)
-        ahrefs = data.xpath('//ul/li[@class="title"]/a')
-        href = []
-        for link in ahrefs:
-            href.append(link.items()[0][1])
-        # print(href)
+        hrefs = data.xpath('//ul/li[@class="title"]/a/@href')
         for i in range(len(items)):
-            print('电影名:{0} ,链接:{1}'.format(names[i],href[i]))
+            print('电影名:{0} ,链接:{1}'.format(names[i],hrefs[i]))
 
 
 
 if __name__ == '__main__':
-    account = input("输入用户名:")
-    password = input("输入密码:")
-    if login(account, password):
-        get_movieCollect()
-
+    # account = input("输入用户名:")
+    # password = input("输入密码:")
+    # if login(account, password):
+    #     get_movieCollect()
+    get_movieCollect()
