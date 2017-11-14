@@ -41,17 +41,18 @@ class W2json(object):
 
 # 数据存储到MySQL
 class W2mysql(object):
-    def open_spider(self,spider):  # 爬虫打开的时候做的操作
+    def open_spider(self, spider):  # 爬虫打开的时候做的操作
         self.conn = pymysql.connect(
-            host='127.0.0.1',
-            port=3306,
+            host='219.234.147.218',
+            port=23306,
             user='root',
-            passwd='root',
+            passwd='yaojing0129',
             db='scrapyDB',
             charset='utf8mb4',
             cursorclass=pymysql.cursors.DictCursor)
-    def close_spider(self,spider):  # 爬虫结束的时候做的操作
-        self.conn.commit()
+
+    def close_spider(self, spider):  # 爬虫结束的时候做的操作
+        self.conn.close()
 
     def process_item(self,item,spider):
         date = item['date']
@@ -61,21 +62,23 @@ class W2mysql(object):
         wind = item['wind']
 
         # conn = pymysql.connect(
-        #     host='127.0.0.1',
-        #     port=3306,
+        #     host='219.234.147.218',
+        #     port=23306,
         #     user='root',
-        #     passwd='root',
+        #     passwd='yaojing0129',
         #     db='scrapyDB',
         #     charset='utf8mb4',
         #     cursorclass=pymysql.cursors.DictCursor)
         try:
             with self.conn.cursor() as cursor:
-                sql = '''INSERT INTO WEATHER(date,weekday,temperature,weather,wind)
+                sql = '''INSERT INTO weather(date,weekday,temperature,weather,wind)
                         VALUES (%s, %s,%s,%s,%s)'''
                 ## excute 的第二个参数可以将sql缺省语句补全，一般以元组的格式
                 cursor.execute(sql,(date,weekday,temperature,weather,wind))
-            # conn.commit()
+            self.conn.commit()
         except:
-            print("something's wrong")
+            raise ConnectionError
+        # finally:
+        #     self.conn.close()
         return item
 

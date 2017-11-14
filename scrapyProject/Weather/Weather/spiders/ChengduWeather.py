@@ -9,7 +9,6 @@ class ChengduweatherSpider(scrapy.Spider):
 
     def parse(self, response):
         items = []
-        days = response.xpath('//div[@class="day7"]')
         for day in range(7):
             item = WeatherItem()
             item['date'] = response.xpath('//ul/li/b/text()').extract()[day]
@@ -20,9 +19,8 @@ class ChengduweatherSpider(scrapy.Spider):
             lowTemp = response.xpath('//div[@class="zxt_shuju"]/ul/li/b/text()').extract()[day]
             item['temperature'] = lowTemp + '~' +highTemp
             items.append(item)
-        return items
 
-            # yield 同样可以返回数据个pipeline
+            # yield 同样可以返回数据个pipeline,但是在工程里不够标准
             # highTemp = response.xpath('//div[@class="zxt_shuju"]/ul/li/span/text()').extract()[day]
             # lowTemp = response.xpath('//div[@class="zxt_shuju"]/ul/li/b/text()').extract()[day]
             # yield {
@@ -32,4 +30,4 @@ class ChengduweatherSpider(scrapy.Spider):
             #     'wind' : response.xpath('//ul[@class="txt"]/li/text()').extract()[day],
             #     'temperature' : (lowTemp + '~' +highTemp)
             # }
-
+        return items
