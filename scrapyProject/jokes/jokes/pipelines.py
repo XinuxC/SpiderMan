@@ -9,5 +9,5 @@
 class JokesPipeline(object):
     def process_item(self, item, spider):
         with open('jokes.txt','a+') as f :
-            f.write('作者{0} \n{1}\n'.format(item['auther'],item['content']))
+            f.write('作者{0} \n {1} \n'.format(item['auther'],item['content']))
         return item

@@ -6,10 +6,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapyProject/jokes/jokes.txt" afterPath="$PROJECT_DIR$/scrapyProject/jokes/jokes.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/customUserAgent.py" afterPath="$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/customUserAgent.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapyProject/jokes/jokes/pipelines.py" afterPath="$PROJECT_DIR$/scrapyProject/jokes/jokes/pipelines.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapyProject/jokes/jokes/settings.py" afterPath="$PROJECT_DIR$/scrapyProject/jokes/jokes/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapyProject/jokes/jokes/spiders/hotjokes.py" afterPath="$PROJECT_DIR$/scrapyProject/jokes/jokes/spiders/hotjokes.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hotjokes.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/spiders/hotjokes.py">
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="352">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="doubanbookspider.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/spiders/doubanbookspider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="20" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -33,33 +40,33 @@
         </entry>
       </file>
       <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/pipelines.py">
+        <entry file="file://$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="220">
+              <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="56" column="3" lean-forward="false" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="customUserAgent.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/customUserAgent.py">
+        <entry file="file://$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/middlewares/customUserAgent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            <state relative-caret-position="484">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
-                <element signature="e#105#182#0" expanded="true" />
+                <element signature="e#175#252#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/items.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="12" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -67,41 +74,11 @@
       <file leaf-file-name="xsphspider.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/spiders/xsphspider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="16" />
+            <state relative-caret-position="274">
+              <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="32" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/pipelines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="68" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sjzh.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/spiders/sjzh.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="45" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -152,7 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/homecoming.py" />
         <option value="$PROJECT_DIR$/zhihu.py" />
         <option value="$PROJECT_DIR$/zhihu/loginzhihu.py" />
         <option value="$PROJECT_DIR$/weather/cityWeather.py" />
@@ -190,19 +166,26 @@
         <option value="$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/customProxy.py" />
         <option value="$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/customUserAgent.py" />
         <option value="$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/uatest.py" />
-        <option value="$PROJECT_DIR$/scrapyProject/jokes/jokes/spiders/hotjokes.py" />
         <option value="$PROJECT_DIR$/scrapyProject/jokes/jokes/settings.py" />
         <option value="$PROJECT_DIR$/scrapyProject/novels/novels/spiders/sjzh.py" />
         <option value="$PROJECT_DIR$/scrapyProject/novels/novels/items.py" />
         <option value="$PROJECT_DIR$/scrapyProject/novels/novels/settings.py" />
         <option value="$PROJECT_DIR$/scrapyProject/novels/novels/pipelines.py" />
         <option value="$PROJECT_DIR$/scrapyProject/novels/novels/spiders/xsphspider.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/jokes/jokes/spiders/hotjokes.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/spiders/doubanmovie.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/middlewares/__init__.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/middlewares/customUserAgent.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/settings.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/items.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/pipelines.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/spiders/doubanbookspider.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-5" />
-    <option name="width" value="1930" />
+    <option name="x" value="456" />
+    <option name="width" value="1469" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -221,7 +204,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -238,40 +220,28 @@
               <item name="SpiderMan" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpiderMan" type="462c0819:PsiDirectoryNode" />
               <item name="scrapyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="novels" type="462c0819:PsiDirectoryNode" />
+              <item name="doubanbook" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpiderMan" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpiderMan" type="462c0819:PsiDirectoryNode" />
               <item name="scrapyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="novels" type="462c0819:PsiDirectoryNode" />
-              <item name="novels" type="462c0819:PsiDirectoryNode" />
+              <item name="doubanbook" type="462c0819:PsiDirectoryNode" />
+              <item name="doubanbook" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpiderMan" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpiderMan" type="462c0819:PsiDirectoryNode" />
               <item name="scrapyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="novels" type="462c0819:PsiDirectoryNode" />
-              <item name="novels" type="462c0819:PsiDirectoryNode" />
+              <item name="doubanbook" type="462c0819:PsiDirectoryNode" />
+              <item name="doubanbook" type="462c0819:PsiDirectoryNode" />
               <item name="spiders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpiderMan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpiderMan" type="462c0819:PsiDirectoryNode" />
-              <item name="scrapyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="Weather" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpiderMan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpiderMan" type="462c0819:PsiDirectoryNode" />
-              <item name="scrapyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="Weather" type="462c0819:PsiDirectoryNode" />
-              <item name="Weather" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,24 +260,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.uatest">
-    <configuration name="articleSpider" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/beautifulsoup/wikiSpider/wikiSpider/spiders" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SpiderMan" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/beautifulsoup/wikiSpider/wikiSpider/spiders/articleSpider.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.doubanmovie">
     <configuration name="blog" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -338,6 +291,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="SpiderMan" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/douban/login/db_login.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="doubanmovie" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SpiderMan" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/spiders/doubanmovie.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -378,18 +348,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.db_login" />
-      <item index="1" class="java.lang.String" itemvalue="Python.articleSpider" />
-      <item index="2" class="java.lang.String" itemvalue="Python.julyedu_spider" />
-      <item index="3" class="java.lang.String" itemvalue="Python.blog" />
-      <item index="4" class="java.lang.String" itemvalue="Python.uatest" />
+      <item index="1" class="java.lang.String" itemvalue="Python.julyedu_spider" />
+      <item index="2" class="java.lang.String" itemvalue="Python.blog" />
+      <item index="3" class="java.lang.String" itemvalue="Python.uatest" />
+      <item index="4" class="java.lang.String" itemvalue="Python.doubanmovie" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.uatest" />
-        <item index="1" class="java.lang.String" itemvalue="Python.blog" />
-        <item index="2" class="java.lang.String" itemvalue="Python.db_login" />
-        <item index="3" class="java.lang.String" itemvalue="Python.julyedu_spider" />
-        <item index="4" class="java.lang.String" itemvalue="Python.articleSpider" />
+        <item index="0" class="java.lang.String" itemvalue="Python.doubanmovie" />
+        <item index="1" class="java.lang.String" itemvalue="Python.uatest" />
+        <item index="2" class="java.lang.String" itemvalue="Python.blog" />
+        <item index="3" class="java.lang.String" itemvalue="Python.db_login" />
+        <item index="4" class="java.lang.String" itemvalue="Python.julyedu_spider" />
       </list>
     </recent_temporary>
   </component>
@@ -410,15 +380,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="0" width="1930" height="1047" extended-state="0" />
+    <frame x="456" y="0" width="1469" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.107628" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.071674705" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30769232" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27222833" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -443,44 +413,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/studyrequests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SeniorRequests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2024">
-          <caret line="92" column="50" lean-forward="false" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beautifulsoup/navigatingTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beautifulsoup/singledomain.py" />
-    <entry file="file://$PROJECT_DIR$/beautifulsoup/getalldomain.py" />
-    <entry file="file://$PROJECT_DIR$/beautifulsoup/getLinks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beautifulsoup/scrapySpider.py" />
-    <entry file="file://$PROJECT_DIR$/beautifulsoup/getAllLinks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-952">
-          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/Scrapy-1.3.3-py3.5.egg/scrapy/spiders/__init__.py" />
     <entry file="file://$PROJECT_DIR$/beautifulsoup/douyuimg.py" />
     <entry file="file://$PROJECT_DIR$/beautifulsoup/douyupic.py" />
@@ -617,9 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="16" />
-          <folding>
-            <element signature="e#185#200#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -628,67 +557,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="e#154#163#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/proxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/jokes/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/customProxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/proxy.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/jokes/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/customProxy.py" />
     <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/uatest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/uatest.py" />
     <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/spiders/hotjokes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
+        <state relative-caret-position="0">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -696,7 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -704,64 +590,114 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="69" column="28" lean-forward="false" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <marker date="1510756521083" expanded="true" signature="222:405" ph="..." />
+            <marker date="1510756521083" expanded="true" signature="264:405" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/settings.py" />
+    <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/spiders/sjzh.py" />
+    <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/items.py" />
+    <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/pipelines.py" />
+    <entry file="file://$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/spiders/doubanmovie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/customUserAgent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="550">
+          <caret line="31" column="58" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="31" selection-end-column="58" />
           <folding>
-            <element signature="e#105#182#0" expanded="true" />
+            <element signature="e#105#182#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/pipelines.py">
+    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="1189">
+          <caret line="59" column="75" lean-forward="true" selection-start-line="59" selection-start-column="75" selection-end-line="59" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/settings.py">
+    <entry file="file://$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/middlewares/customUserAgent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="68" selection-end-column="1" />
+        <state relative-caret-position="484">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#175#252#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/middlewares/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/spiders/sjzh.py">
+    <entry file="file://$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="45" />
+        <state relative-caret-position="176">
+          <caret line="56" column="3" lean-forward="false" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/items.py">
+    <entry file="file://$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="12" />
+        <state relative-caret-position="220">
+          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/pipelines.py">
+    <entry file="file://$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+        <state relative-caret-position="352">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/doubanbook/doubanbook/spiders/doubanbookspider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/spiders/xsphspider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="16" />
+        <state relative-caret-position="274">
+          <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="32" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
