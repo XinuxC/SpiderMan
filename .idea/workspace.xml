@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b40c6f8b-bc7a-4c6b-a54d-48249c76b9a2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SpiderMan.iml" afterPath="$PROJECT_DIR$/.idea/SpiderMan.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/douban/login/db_login.py" afterPath="$PROJECT_DIR$/douban/login/db_login.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapyProject/jokes/jokes.txt" afterPath="$PROJECT_DIR$/scrapyProject/jokes/jokes.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/customUserAgent.py" afterPath="$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/customUserAgent.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapyProject/jokes/jokes/pipelines.py" afterPath="$PROJECT_DIR$/scrapyProject/jokes/jokes/pipelines.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapyProject/jokes/jokes/settings.py" afterPath="$PROJECT_DIR$/scrapyProject/jokes/jokes/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapyProject/jokes/jokes/spiders/hotjokes.py" afterPath="$PROJECT_DIR$/scrapyProject/jokes/jokes/spiders/hotjokes.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,26 +20,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="douban_movie250.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/douban/movies/douban_movie250.py">
+      <file leaf-file-name="hotjokes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/spiders/hotjokes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="16" />
+            <state relative-caret-position="228">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
-                <element signature="e#185#200#0" expanded="true" />
+                <element signature="e#24#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db_login.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/douban/login/db_login.py">
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="943">
-              <caret line="72" column="59" lean-forward="false" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="59" />
+            <state relative-caret-position="209">
+              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customUserAgent.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/customUserAgent.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
               <folding>
-                <element signature="e#154#163#0" expanded="true" />
+                <element signature="e#105#182#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xsphspider.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/spiders/xsphspider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="16" />
+              <folding>
+                <element signature="e#24#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/pipelines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="68" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sjzh.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/spiders/sjzh.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,6 +142,8 @@
       <find>ChENMOS</find>
       <find>我看</find>
       <find>18200590129</find>
+      <find>DOWNLOADER_MIDDLEWARES</find>
+      <find>get_chapter_url</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,13 +186,24 @@
         <option value="$PROJECT_DIR$/douban/movies/douban_movie250.py" />
         <option value="$PROJECT_DIR$/douban/login/db_login.py" />
         <option value="$USER_HOME$/OneDrive/julyedu Spider/第5课/新建文件夹/blog.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/jokes/jokes/pipelines.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/customProxy.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/customUserAgent.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/uatest.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/jokes/jokes/spiders/hotjokes.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/jokes/jokes/settings.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/novels/novels/spiders/sjzh.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/novels/novels/items.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/novels/novels/settings.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/novels/novels/pipelines.py" />
+        <option value="$PROJECT_DIR$/scrapyProject/novels/novels/spiders/xsphspider.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="531" />
-    <option name="width" value="1396" />
-    <option name="height" value="1038" />
+    <option name="x" value="-5" />
+    <option name="width" value="1930" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -139,6 +220,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -149,27 +232,46 @@
             <path>
               <item name="SpiderMan" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpiderMan" type="462c0819:PsiDirectoryNode" />
-              <item name="beautifulsoup" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapyProject" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpiderMan" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpiderMan" type="462c0819:PsiDirectoryNode" />
-              <item name="beautifulsoup" type="462c0819:PsiDirectoryNode" />
-              <item name="wikiSpider" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapyProject" type="462c0819:PsiDirectoryNode" />
+              <item name="novels" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpiderMan" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpiderMan" type="462c0819:PsiDirectoryNode" />
-              <item name="beautifulsoup" type="462c0819:PsiDirectoryNode" />
-              <item name="wikiSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="wikiSpider" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapyProject" type="462c0819:PsiDirectoryNode" />
+              <item name="novels" type="462c0819:PsiDirectoryNode" />
+              <item name="novels" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpiderMan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpiderMan" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapyProject" type="462c0819:PsiDirectoryNode" />
+              <item name="novels" type="462c0819:PsiDirectoryNode" />
+              <item name="novels" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpiderMan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpiderMan" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapyProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Weather" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpiderMan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpiderMan" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapyProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Weather" type="462c0819:PsiDirectoryNode" />
+              <item name="Weather" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -188,7 +290,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.blog">
+  <component name="RunManager" selected="Python.uatest">
     <configuration name="articleSpider" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -257,37 +359,37 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="zhihulogin" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="uatest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zhihu" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="SpiderMan" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zhihu/zhihulogin.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/uatest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.zhihulogin" />
-      <item index="1" class="java.lang.String" itemvalue="Python.db_login" />
-      <item index="2" class="java.lang.String" itemvalue="Python.articleSpider" />
-      <item index="3" class="java.lang.String" itemvalue="Python.julyedu_spider" />
-      <item index="4" class="java.lang.String" itemvalue="Python.blog" />
+      <item index="0" class="java.lang.String" itemvalue="Python.db_login" />
+      <item index="1" class="java.lang.String" itemvalue="Python.articleSpider" />
+      <item index="2" class="java.lang.String" itemvalue="Python.julyedu_spider" />
+      <item index="3" class="java.lang.String" itemvalue="Python.blog" />
+      <item index="4" class="java.lang.String" itemvalue="Python.uatest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.blog" />
-        <item index="1" class="java.lang.String" itemvalue="Python.db_login" />
-        <item index="2" class="java.lang.String" itemvalue="Python.julyedu_spider" />
-        <item index="3" class="java.lang.String" itemvalue="Python.articleSpider" />
-        <item index="4" class="java.lang.String" itemvalue="Python.zhihulogin" />
+        <item index="0" class="java.lang.String" itemvalue="Python.uatest" />
+        <item index="1" class="java.lang.String" itemvalue="Python.blog" />
+        <item index="2" class="java.lang.String" itemvalue="Python.db_login" />
+        <item index="3" class="java.lang.String" itemvalue="Python.julyedu_spider" />
+        <item index="4" class="java.lang.String" itemvalue="Python.articleSpider" />
       </list>
     </recent_temporary>
   </component>
@@ -308,15 +410,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="531" y="0" width="1396" height="1038" extended-state="0" />
+    <frame x="-5" y="0" width="1930" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.107628" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.308204" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30769232" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -341,82 +443,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/homecoming.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhihu.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="331" column="0" lean-forward="false" selection-start-line="331" selection-start-column="0" selection-end-line="331" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/urllib/parse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="711" column="0" lean-forward="false" selection-start-line="711" selection-start-column="0" selection-end-line="711" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhihu/loginzhihu.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/requests/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-465">
-          <caret line="735" column="44" lean-forward="true" selection-start-line="735" selection-start-column="44" selection-end-line="735" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/cmdline.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="1025" column="0" lean-forward="false" selection-start-line="1025" selection-start-column="0" selection-end-line="1025" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/os.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="680" column="0" lean-forward="false" selection-start-line="680" selection-start-column="0" selection-end-line="680" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/_collections_abc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="593" column="0" lean-forward="false" selection-start-line="593" selection-start-column="0" selection-end-line="593" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/getpass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmdline.py" />
-    <entry file="file://$PROJECT_DIR$/weather/cityWeather.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="12" column="11" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/headtobs4.py" />
-    <entry file="file://$PROJECT_DIR$/meetbs4.py" />
     <entry file="file://$PROJECT_DIR$/studyrequests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -513,7 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -521,9 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding>
-            <element signature="e#216#252#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -531,7 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -539,7 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -547,9 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
           <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-          <folding>
-            <element signature="e#260#273#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -557,7 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -565,7 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -573,9 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1210">
           <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-          <folding>
-            <element signature="e#153#164#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -583,9 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-          <folding>
-            <element signature="e#150#161#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -593,7 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2462">
           <caret line="115" column="31" lean-forward="false" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -601,44 +609,161 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1496">
           <caret line="95" column="33" lean-forward="false" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sina/weibo_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding>
-            <element signature="e#168#179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sina/weibo_login.py" />
     <entry file="file://$PROJECT_DIR$/douban/movies/douban_movie250.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="323">
           <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="16" />
           <folding>
-            <element signature="e#185#200#0" expanded="true" />
+            <element signature="e#185#200#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/OneDrive/julyedu Spider/第5课/新建文件夹/blog.py">
+    <entry file="file://$USER_HOME$/OneDrive/julyedu Spider/第5课/新建文件夹/blog.py" />
+    <entry file="file://$PROJECT_DIR$/douban/login/db_login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="e#154#163#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/douban/login/db_login.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/jokes/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="72" column="59" lean-forward="false" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="59" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/customProxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/uatest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/spiders/hotjokes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#154#163#0" expanded="true" />
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/Weather/Weather/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/Weather/Weather/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="69" column="28" lean-forward="false" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/middlewares/customUserAgent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding>
+            <element signature="e#105#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/jokes/jokes/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="68" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/spiders/sjzh.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapyProject/novels/novels/spiders/xsphspider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="16" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>

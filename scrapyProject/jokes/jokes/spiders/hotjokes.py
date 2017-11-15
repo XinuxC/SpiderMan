@@ -18,6 +18,6 @@ class HotjokesSpider(scrapy.Spider):
 
         for joke in jokes:
             item['auther'] = joke.xpath('.//h2/text()').extract()[0]
-            item['content'] = joke.xpath('.//div[@class="content"]/span/text()').extract()
+            item['content'] = joke.xpath('.//div[@class="content"]/span/text()').extract()[0].strip()
             yield item
 
