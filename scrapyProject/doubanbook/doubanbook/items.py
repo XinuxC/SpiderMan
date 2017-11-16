@@ -14,4 +14,3 @@ class DoubanbookItem(scrapy.Item):
     name = scrapy.Field()
     info = scrapy.Field()
     rating = scrapy.Field()
-

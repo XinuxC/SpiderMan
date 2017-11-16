@@ -14,6 +14,7 @@ class DoubanbookspiderSpider(scrapy.Spider):
             yield scrapy.Request(page_url,callback=self.parse_books)
 
     def parse_books(self,response):
+        # item = DoubanbookItem()
         books = response.xpath('//tr[@class="item"]')
         for book in books:
             item = DoubanbookItem()
@@ -21,6 +22,4 @@ class DoubanbookspiderSpider(scrapy.Spider):
             item['info'] = book.xpath('.//p[1]/text()').extract()[0].strip()
             item['rating'] = book.xpath('.//td[2]/div[2]/span[@class="rating_nums"]/text()').extract()[0]
             yield item
-
-
-
+        # return item  #都是返回，yield不终止程序，return直接函数就结束了

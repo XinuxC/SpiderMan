@@ -5,6 +5,7 @@
 # @Contact : pishit2009@gmail.com 
 # @Date  : 2017/11/8
 # @Desc  :
+import json
 import os
 import requests
 # from HTMLParser import HTMLParser
@@ -24,9 +25,10 @@ headers ={
 
 session = requests.Session()
 
+
 def login(account,password):
-        # url = 'https://accounts.douban.com/login'
-    url = 'https://www.douban.com/accounts/login'
+    url = 'https://accounts.douban.com/login'
+    # url = 'https://www.douban.com/accounts/login'
     postdata = {
 
         # 'redir' : 'https://www.douban.com',
@@ -75,10 +77,8 @@ def get_movieCollect():
             print('电影名:{0} ,链接:{1}'.format(names[i],hrefs[i]))
 
 
-
 if __name__ == '__main__':
-    # account = input("输入用户名:")
-    # password = input("输入密码:")
-    # if login(account, password):
-    #     get_movieCollect()
-    get_movieCollect()
+        account = input("输入用户名:")
+        password = input("输入密码:")
+        if login(account, password):
+            get_movieCollect()

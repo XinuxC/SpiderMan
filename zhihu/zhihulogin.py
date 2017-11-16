@@ -23,7 +23,7 @@ except:
     pass
 import json
 
-
+from lxml import etree
 
 
 #根据网站报头信息设置headers
@@ -35,9 +35,9 @@ headers = {
 
 session = requests.Session()
 # 从txt文件中获取cookies,json->dict存入session.cookies
-# with open("cookies.txt",'r') as f:
-#     cookies = json.load(f)
-# session.cookies.update(cookies)
+with open("cookies.txt",'r') as f:
+    cookies = json.load(f)
+session.cookies.update(cookies)
 
 
 #获取_xsrf
@@ -94,8 +94,8 @@ def login(account,password):
     print(r.text)
     with open("cookies.txt", 'w') as f:
         json.dump(session.cookies.get_dict(), f)
-    with open("login.html", "wb") as f:
-        f.write(r.content)
+    # with open("login.html", "wb") as f:
+    #     f.write(r.content)
 
 
 def  isLogin():
@@ -126,27 +126,23 @@ def get_following():
         followees = json.loads(r.text)
         followees_list+=followees['data']
         time.sleep(2)
-    return followees_list
+    # return followees_list
+        for i in followees_list:
+            print('用户:%s\tHeadline:%s' % (i['name'], i['headline']))
+
+
+
 
 
 if __name__ == '__main__':
     if isLogin():
         print("已登录")
-        followings =get_following()
-        count = 0
-        for i in followings:
-            print('用户:%s\tHeadline:%s' % (i['name'], i['headline']))
-            count += 1
-        print('关注了 %d 人' %count)
+        get_following()
+
     else:
         account = input("请输入用户名:")
         password = input("请输入密码:")
         login(account,password)
-        followings = get_following()
-        count = 0
-        for i in followings:
-            print('用户:%s\tHeadline:%s' % (i['name'], i['headline']))
-            count += 1
-        print('关注了 %d 人' % count)
+        get_following()
 
 
