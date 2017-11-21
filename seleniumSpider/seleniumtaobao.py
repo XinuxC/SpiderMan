@@ -16,7 +16,7 @@ from pyquery import PyQuery as pq
 import pymysql
 
 # browser = webdriver.Chrome(r'C:\Users\30594\chromedriver\chromedriver.exe')
-browser = webdriver.PhantomJS(r'C:\Users\30594\phantomjs-2.1.1-windows\bin\phantomjs.exe')
+browser = webdriver.PhantomJS(r'C:\Users\XinuxC\phantomjs-2.1.1-windows\bin\phantomjs.exe')
 wait = WebDriverWait(browser,30)
 browser.set_window_size(1400,900)  #设置窗口大小,默认比较小,影响模拟浏览器操作
 def search():
@@ -105,16 +105,16 @@ def save_to_mysql(product):
 
 
 def main():
-	try:
-	    total_pages = search()
-	    pages = int(re.compile('(\d+)').search(total_pages).group(1))
-	    print(pages)
-	    for page in range(2,pages+1):
-	        next_page(page)
-	except Exception:
-		print("出错啦")
-	finally:
-		browser.close()
+    try:
+        total_pages = search()
+        pages = int(re.compile('(\d+)').search(total_pages).group(1))
+        print(pages)
+        for page in range(2,pages+1):
+            next_page(page)
+    except Exception:
+        print("出错啦")
+    finally:
+        browser.close()
         conn.close()
 
 if __name__ == '__main__':
