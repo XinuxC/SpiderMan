@@ -11,6 +11,12 @@ import re
 
 import itchat
 
+import jieba
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud, ImageColorGenerator
+from PIL import Image
+import numpy as np
+from  collections import Counter
 #login
 itchat.login()
 # 获取朋友列表
@@ -34,7 +40,9 @@ def imaWall():
     img_list = os.listdir('headimg')
     size = int(math.sqrt(float(720*720)/len(img_list)))
     lines = int(640/size)
-    image = Image.new('RGBA',(790,790))
+    image = Image.new('RGBA',(790,790))  # If it's got an alpha channel that you want to preserve,
+                                         # PNG is really the only reasonable choice.
+                                         # Alternately you can flatten it to a RGB image and save as a JPEG.
     x = y = 0
     for i in range(1,len(img_list)+1):
         try:
@@ -48,7 +56,7 @@ def imaWall():
             if x == lines:
                 x = 0
                 y += 1
-    image.save('HeadsWall.jpg')
+    image.save('HeadsWall.png')
 
 import pyecharts
 #获取位置
@@ -96,12 +104,6 @@ def to_charts():
     pie.render('Sex.html')
 
 #获取好友个性签名 做成词云
-import jieba
-import matplotlib.pyplot as plt
-from wordcloud import WordCloud, ImageColorGenerator
-from PIL import Image
-import numpy as np
-from  collections import Counter
 def to_wl_pic():
     signatures = []
     for i in friends:
@@ -120,13 +122,14 @@ def to_wl_pic():
     wl_space_split = " ".join(list(wordlist))
 
     #wordcloud词云
-    background = np.array(Image.open(os.path.join('D:\python\SpiderMan\weChat','20171120223350.jpg')))
+    basename = os.path.abspath('20171120223350.jpg')
+    background = np.array(Image.open(basename))
     my_wordCloud = WordCloud(background_color="white",
                              max_words = 5000,  # 词云显示最大词数
                              mask = background,  # 设置背景
                              max_font_size=100,  # 字体最大值
                              random_state=42,
-                             font_path='D:\python\weChat\STXINGKA.TTF',  # 设置字体
+                             font_path='STXINGKA.TTF',  # 设置字体
                              width=1000,
                              height=860,  # 设置图片默认大小
                              margin=2).generate(wl_space_split)
@@ -145,3 +148,4 @@ if __name__ == '__main__':
     get_location()
     to_wl_pic()
     to_charts()
+    input = ("press enter to exit")

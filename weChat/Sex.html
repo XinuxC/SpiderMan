@@ -44,11 +44,41 @@ radiusToData:a.prototype.coordToData},o.inherits(n,a),t.exports=n},function(t,e,
 </script>
 </head>
 <body>
-<div id="d537386a05db4df49713c67e827636e6" style="width:800px;height:400px;"></div>
+<div id="e33a1e7865924967a81023d5fb7fbb34" style="width:800px;height:400px;"></div>
 <script type="text/javascript">
-    var myChart_d537386a05db4df49713c67e827636e6 = echarts.init(document.getElementById('d537386a05db4df49713c67e827636e6'));
-    var option_d537386a05db4df49713c67e827636e6 = {
-    "backgroundColor": "#fff",
+    var myChart_e33a1e7865924967a81023d5fb7fbb34 = echarts.init(document.getElementById('e33a1e7865924967a81023d5fb7fbb34'));
+    var option_e33a1e7865924967a81023d5fb7fbb34 = {
+    "toolbox": {
+        "orient": "vertical",
+        "feature": {
+            "dataView": {
+                "show": true
+            },
+            "restore": {
+                "show": true
+            },
+            "saveAsImage": {
+                "title": "\u4e0b\u8f7d\u56fe\u7247",
+                "show": true
+            }
+        },
+        "show": true,
+        "left": "95%",
+        "top": "center"
+    },
+    "series_id": 4996253,
+    "tooltip": {
+        "textStyle": {
+            "color": "#fff",
+            "fontSize": 14
+        },
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "formatter": null,
+        "trigger": "item"
+    },
     "color": [
         "#c23531",
         "#2f4554",
@@ -76,38 +106,50 @@ radiusToData:a.prototype.coordToData},o.inherits(n,a),t.exports=n},function(t,e,
         "#918597",
         "#f6f5ec"
     ],
-    "tooltip": {
-        "axisPointer": {
-            "type": "line"
-        },
-        "triggerOn": "mousemove|click",
-        "textStyle": {
-            "fontSize": 14,
-            "color": "#fff"
-        },
-        "formatter": null,
-        "trigger": "item"
-    },
     "legend": [
         {
             "orient": "vertical",
+            "selectedMode": "multiple",
+            "show": true,
             "data": [
                 "\u7537",
                 "\u5973",
                 "\u5996"
             ],
-            "left": "left",
-            "selectedMode": "multiple",
             "top": "top",
-            "show": true,
             "textStyle": {
-                "fontSize": 12,
-                "color": "#333"
-            }
+                "color": "#333",
+                "fontSize": 12
+            },
+            "left": "left"
         }
     ],
     "series": [
         {
+            "seriesId": 4996253,
+            "label": {
+                "emphasis": {
+                    "textStyle": {
+                        "color": "#fff",
+                        "fontSize": 12
+                    },
+                    "position": null,
+                    "show": true
+                },
+                "normal": {
+                    "textStyle": {
+                        "color": null,
+                        "fontSize": 12
+                    },
+                    "position": "outside",
+                    "show": true,
+                    "formatter": "{b}: {d}%"
+                }
+            },
+            "center": [
+                "50%",
+                "50%"
+            ],
             "data": [
                 {
                     "value": 55.92,
@@ -124,74 +166,32 @@ radiusToData:a.prototype.coordToData},o.inherits(n,a),t.exports=n},function(t,e,
             ],
             "type": "pie",
             "roseType": null,
-            "center": [
-                "50%",
-                "50%"
-            ],
             "radius": [
                 "40%",
                 "75%"
             ],
-            "label": {
-                "emphasis": {
-                    "position": null,
-                    "textStyle": {
-                        "fontSize": 12,
-                        "color": "#fff"
-                    },
-                    "show": true
-                },
-                "normal": {
-                    "position": "outside",
-                    "textStyle": {
-                        "fontSize": 12,
-                        "color": null
-                    },
-                    "formatter": "{b}: {d}%",
-                    "show": true
-                }
-            },
-            "name": "",
-            "seriesId": 4796371
+            "name": ""
         }
     ],
-    "series_id": 4796371,
-    "toolbox": {
-        "orient": "vertical",
-        "top": "center",
-        "feature": {
-            "restore": {
-                "show": true
-            },
-            "dataView": {
-                "show": true
-            },
-            "saveAsImage": {
-                "title": "\u4e0b\u8f7d\u56fe\u7247",
-                "show": true
-            }
-        },
-        "left": "95%",
-        "show": true
-    },
     "title": [
         {
-            "left": "right",
-            "subtext": "",
-            "top": "auto",
             "text": "\u6bd4\u4f8b\u56fe",
-            "subtextStyle": {
-                "fontSize": 12,
-                "color": "#aaa"
-            },
+            "top": "auto",
+            "subtext": "",
             "textStyle": {
-                "fontSize": 18,
-                "color": "#000"
+                "color": "#000",
+                "fontSize": 18
+            },
+            "left": "right",
+            "subtextStyle": {
+                "color": "#aaa",
+                "fontSize": 12
             }
         }
-    ]
+    ],
+    "backgroundColor": "#fff"
 };
-    myChart_d537386a05db4df49713c67e827636e6.setOption(option_d537386a05db4df49713c67e827636e6);
+    myChart_e33a1e7865924967a81023d5fb7fbb34.setOption(option_e33a1e7865924967a81023d5fb7fbb34);
 </script>
 </body>
 </html>

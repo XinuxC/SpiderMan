@@ -45,102 +45,236 @@ radiusToData:a.prototype.coordToData},o.inherits(n,a),t.exports=n},function(t,e,
 </script>
 </head>
 <body>
-<div id="16b079ada94041279c1a78072375ba22" style="width:1200px;height:600px;"></div>
+<div id="22c72e98ea014cda8bcc05274d746a54" style="width:1200px;height:600px;"></div>
 <script type="text/javascript">
-    var myChart_16b079ada94041279c1a78072375ba22 = echarts.init(document.getElementById('16b079ada94041279c1a78072375ba22'));
-    var option_16b079ada94041279c1a78072375ba22 = {
-    "backgroundColor": "#404a59",
-    "color": [
-        "#fab27b",
-        "#2a5caa",
-        "#f47920",
-        "#b2d235",
-        "#749f83",
-        "#f05b72",
-        "#444693",
-        "#bda29a",
-        "#f6f5ec",
-        "#726930",
-        "#ac6767",
-        "#6950a1",
-        "#c4ccd3",
-        "#6d8346",
-        "#2f4554",
-        "#ca8622",
-        "#c23531",
-        "#ef5b9c",
-        "#1d953f",
-        "#546570",
-        "#918597",
-        "#905a3d",
-        "#6e7074",
-        "#d48265",
-        "#61a0a8"
-    ],
-    "geo": {
-        "roam": true,
-        "itemStyle": {
-            "emphasis": {
-                "areaColor": "#2a333d"
+    var myChart_22c72e98ea014cda8bcc05274d746a54 = echarts.init(document.getElementById('22c72e98ea014cda8bcc05274d746a54'));
+    var option_22c72e98ea014cda8bcc05274d746a54 = {
+    "toolbox": {
+        "orient": "vertical",
+        "feature": {
+            "dataView": {
+                "show": true
             },
-            "normal": {
-                "areaColor": "#323c48",
-                "borderColor": "#111"
-            }
-        },
-        "map": "china",
-        "label": {
-            "emphasis": {
-                "textStyle": {
-                    "color": "#eee"
-                },
+            "restore": {
+                "show": true
+            },
+            "saveAsImage": {
+                "title": "\u4e0b\u8f7d\u56fe\u7247",
                 "show": true
             }
-        }
+        },
+        "show": true,
+        "left": "95%",
+        "top": "center"
     },
+    "series_id": 8112475,
     "tooltip": {
-        "axisPointer": {
-            "type": "line"
+        "textStyle": {
+            "color": "#fff",
+            "fontSize": 14
         },
         "triggerOn": "mousemove|click",
-        "textStyle": {
-            "fontSize": 14,
-            "color": "#fff"
+        "axisPointer": {
+            "type": "line"
         },
         "formatter": "{b}: {c}",
         "trigger": "item"
     },
+    "color": [
+        "#bda29a",
+        "#ac6767",
+        "#2f4554",
+        "#61a0a8",
+        "#6950a1",
+        "#f47920",
+        "#c23531",
+        "#444693",
+        "#905a3d",
+        "#b2d235",
+        "#ca8622",
+        "#f05b72",
+        "#6e7074",
+        "#d48265",
+        "#1d953f",
+        "#f6f5ec",
+        "#726930",
+        "#749f83",
+        "#6d8346",
+        "#918597",
+        "#c4ccd3",
+        "#ef5b9c",
+        "#fab27b",
+        "#546570",
+        "#2a5caa"
+    ],
     "legend": [
         {
             "orient": "horizontal",
+            "selectedMode": "multiple",
+            "show": false,
             "data": [
                 ""
             ],
-            "left": "center",
-            "selectedMode": "multiple",
             "top": "top",
-            "show": false,
             "textStyle": {
-                "fontSize": 12,
-                "color": "#333"
-            }
+                "color": "#333",
+                "fontSize": 12
+            },
+            "left": "center"
         }
     ],
     "series": [
         {
+            "coordinateSystem": "geo",
             "rippleEffect": {
                 "scale": 5,
-                "brushType": "stroke",
-                "period": 4
+                "period": 4,
+                "brushType": "stroke"
             },
+            "symbolSize": 12,
+            "symbol": "circle",
+            "type": "effectScatter",
+            "showEffectOn": "render",
+            "label": {
+                "emphasis": {
+                    "textStyle": {
+                        "color": "#fff",
+                        "fontSize": 12
+                    },
+                    "position": null,
+                    "show": true
+                },
+                "normal": {
+                    "textStyle": {
+                        "color": "#000",
+                        "fontSize": 12
+                    },
+                    "position": "top",
+                    "show": false,
+                    "formatter": null
+                }
+            },
+            "name": "",
             "data": [
                 {
                     "value": [
-                        123.97,
-                        47.33,
+                        114.07,
+                        22.62,
+                        3
+                    ],
+                    "name": "\u6df1\u5733"
+                },
+                {
+                    "value": [
+                        91.11,
+                        29.97,
                         1
                     ],
-                    "name": "\u9f50\u9f50\u54c8\u5c14"
+                    "name": "\u62c9\u8428"
+                },
+                {
+                    "value": [
+                        118.1,
+                        24.46,
+                        1
+                    ],
+                    "name": "\u53a6\u95e8"
+                },
+                {
+                    "value": [
+                        113.23,
+                        23.16,
+                        3
+                    ],
+                    "name": "\u5e7f\u5dde"
+                },
+                {
+                    "value": [
+                        106.43,
+                        31.51,
+                        1
+                    ],
+                    "name": "\u5df4\u4e2d"
+                },
+                {
+                    "value": [
+                        130.49,
+                        45.48,
+                        1
+                    ],
+                    "name": "\u4e03\u53f0\u6cb3"
+                },
+                {
+                    "value": [
+                        125.35,
+                        43.88,
+                        1
+                    ],
+                    "name": "\u957f\u6625"
+                },
+                {
+                    "value": [
+                        104.06,
+                        30.67,
+                        93
+                    ],
+                    "name": "\u6210\u90fd"
+                },
+                {
+                    "value": [
+                        102.59,
+                        29.59,
+                        1
+                    ],
+                    "name": "\u96c5\u5b89"
+                },
+                {
+                    "value": [
+                        120.836932,
+                        40.711052,
+                        1
+                    ],
+                    "name": "\u846b\u82a6\u5c9b"
+                },
+                {
+                    "value": [
+                        112.91,
+                        27.87,
+                        1
+                    ],
+                    "name": "\u6e58\u6f6d"
+                },
+                {
+                    "value": [
+                        118.78,
+                        32.04,
+                        1
+                    ],
+                    "name": "\u5357\u4eac"
+                },
+                {
+                    "value": [
+                        126.63,
+                        45.75,
+                        5
+                    ],
+                    "name": "\u54c8\u5c14\u6ee8"
+                },
+                {
+                    "value": [
+                        121.53,
+                        31.22,
+                        3
+                    ],
+                    "name": "\u6d66\u4e1c\u65b0\u533a"
+                },
+                {
+                    "value": [
+                        110.35,
+                        20.02,
+                        1
+                    ],
+                    "name": "\u6d77\u53e3"
                 },
                 {
                     "value": [
@@ -160,51 +294,11 @@ radiusToData:a.prototype.coordToData},o.inherits(n,a),t.exports=n},function(t,e,
                 },
                 {
                     "value": [
-                        110.35,
-                        20.02,
+                        120.65,
+                        28.01,
                         1
                     ],
-                    "name": "\u6d77\u53e3"
-                },
-                {
-                    "value": [
-                        118.38,
-                        31.33,
-                        1
-                    ],
-                    "name": "\u829c\u6e56"
-                },
-                {
-                    "value": [
-                        113.23,
-                        23.16,
-                        3
-                    ],
-                    "name": "\u5e7f\u5dde"
-                },
-                {
-                    "value": [
-                        120.836932,
-                        40.711052,
-                        1
-                    ],
-                    "name": "\u846b\u82a6\u5c9b"
-                },
-                {
-                    "value": [
-                        114.07,
-                        22.62,
-                        3
-                    ],
-                    "name": "\u6df1\u5733"
-                },
-                {
-                    "value": [
-                        112.91,
-                        27.87,
-                        1
-                    ],
-                    "name": "\u6e58\u6f6d"
+                    "name": "\u6e29\u5dde"
                 },
                 {
                     "value": [
@@ -216,59 +310,11 @@ radiusToData:a.prototype.coordToData},o.inherits(n,a),t.exports=n},function(t,e,
                 },
                 {
                     "value": [
-                        118.78,
-                        32.04,
+                        123.97,
+                        47.33,
                         1
                     ],
-                    "name": "\u5357\u4eac"
-                },
-                {
-                    "value": [
-                        118.1,
-                        24.46,
-                        1
-                    ],
-                    "name": "\u53a6\u95e8"
-                },
-                {
-                    "value": [
-                        125.03,
-                        46.58,
-                        3
-                    ],
-                    "name": "\u5927\u5e86"
-                },
-                {
-                    "value": [
-                        125.35,
-                        43.88,
-                        1
-                    ],
-                    "name": "\u957f\u6625"
-                },
-                {
-                    "value": [
-                        130.49,
-                        45.48,
-                        1
-                    ],
-                    "name": "\u4e03\u53f0\u6cb3"
-                },
-                {
-                    "value": [
-                        102.59,
-                        29.59,
-                        1
-                    ],
-                    "name": "\u96c5\u5b89"
-                },
-                {
-                    "value": [
-                        120.65,
-                        28.01,
-                        1
-                    ],
-                    "name": "\u6e29\u5dde"
+                    "name": "\u9f50\u9f50\u54c8\u5c14"
                 },
                 {
                     "value": [
@@ -280,27 +326,19 @@ radiusToData:a.prototype.coordToData},o.inherits(n,a),t.exports=n},function(t,e,
                 },
                 {
                     "value": [
-                        121.53,
-                        31.22,
+                        125.03,
+                        46.58,
                         3
                     ],
-                    "name": "\u6d66\u4e1c\u65b0\u533a"
+                    "name": "\u5927\u5e86"
                 },
                 {
                     "value": [
-                        91.11,
-                        29.97,
+                        118.38,
+                        31.33,
                         1
                     ],
-                    "name": "\u62c9\u8428"
-                },
-                {
-                    "value": [
-                        126.63,
-                        45.75,
-                        5
-                    ],
-                    "name": "\u54c8\u5c14\u6ee8"
+                    "name": "\u829c\u6e56"
                 },
                 {
                     "value": [
@@ -309,88 +347,50 @@ radiusToData:a.prototype.coordToData},o.inherits(n,a),t.exports=n},function(t,e,
                         1
                     ],
                     "name": "\u9e21\u897f"
-                },
-                {
-                    "value": [
-                        104.06,
-                        30.67,
-                        93
-                    ],
-                    "name": "\u6210\u90fd"
-                },
-                {
-                    "value": [
-                        106.43,
-                        31.51,
-                        1
-                    ],
-                    "name": "\u5df4\u4e2d"
                 }
-            ],
-            "type": "effectScatter",
-            "label": {
-                "emphasis": {
-                    "position": null,
-                    "textStyle": {
-                        "fontSize": 12,
-                        "color": "#fff"
-                    },
-                    "show": true
-                },
-                "normal": {
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12,
-                        "color": "#000"
-                    },
-                    "formatter": null,
-                    "show": false
-                }
-            },
-            "symbol": "circle",
-            "symbolSize": 12,
-            "name": "",
-            "showEffectOn": "render",
-            "coordinateSystem": "geo"
+            ]
         }
     ],
-    "series_id": 7391960,
-    "toolbox": {
-        "orient": "vertical",
-        "top": "center",
-        "feature": {
-            "restore": {
-                "show": true
+    "title": [
+        {
+            "text": "\u670b\u53cb\u5206\u5e03",
+            "top": "auto",
+            "subtext": "cordinates and counts",
+            "textStyle": {
+                "color": "#fff",
+                "fontSize": 18
             },
-            "dataView": {
-                "show": true
-            },
-            "saveAsImage": {
-                "title": "\u4e0b\u8f7d\u56fe\u7247",
+            "left": "center",
+            "subtextStyle": {
+                "color": "#aaa",
+                "fontSize": 12
+            }
+        }
+    ],
+    "backgroundColor": "#404a59",
+    "geo": {
+        "roam": true,
+        "label": {
+            "emphasis": {
+                "textStyle": {
+                    "color": "#eee"
+                },
                 "show": true
             }
         },
-        "left": "95%",
-        "show": true
-    },
-    "title": [
-        {
-            "left": "center",
-            "subtext": "cordinates and counts",
-            "top": "auto",
-            "text": "\u670b\u53cb\u5206\u5e03",
-            "subtextStyle": {
-                "fontSize": 12,
-                "color": "#aaa"
+        "map": "china",
+        "itemStyle": {
+            "emphasis": {
+                "areaColor": "#2a333d"
             },
-            "textStyle": {
-                "fontSize": 18,
-                "color": "#fff"
+            "normal": {
+                "borderColor": "#111",
+                "areaColor": "#323c48"
             }
         }
-    ]
+    }
 };
-    myChart_16b079ada94041279c1a78072375ba22.setOption(option_16b079ada94041279c1a78072375ba22);
+    myChart_22c72e98ea014cda8bcc05274d746a54.setOption(option_22c72e98ea014cda8bcc05274d746a54);
 </script>
 </body>
 </html>
