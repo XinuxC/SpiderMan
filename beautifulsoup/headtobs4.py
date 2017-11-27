@@ -42,8 +42,8 @@ tagList = bsObj.find_all({'h1','h2','span'})
 
 #返回html中红色与绿色的span标签
 spanTag = bsObj.find_all({"span":{"green","red"}})
-# for st in spanTag:
-#     print(st)
+for st in spanTag:
+    print(st)
 
 ''' 
  find()和findAll()[find_all()?]
