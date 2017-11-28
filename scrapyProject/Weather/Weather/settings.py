@@ -67,7 +67,7 @@ ROBOTSTXT_OBEY = True
 ITEM_PIPELINES = {
    'Weather.pipelines.WeatherPipeline': 500,
    'Weather.pipelines.W2mysql':300,
-   'Weather.pipelines.W2json' :400
+   'Weather.pipelines.W2json' :400,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

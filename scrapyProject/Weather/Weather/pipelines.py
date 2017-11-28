@@ -14,10 +14,8 @@ import pymysql
 class WeatherPipeline(object):
     def process_item(self, item, spider):
         '''
-                处理每一个从Chengdutianqi传过来的
-                item
+          处理每一个从Chengdutianqi传过来的item
         '''
-
         basedir = os.getcwd()
         filename = basedir + os.sep + 'weather.txt'
         with open(filename,'a') as f:
@@ -27,7 +25,6 @@ class WeatherPipeline(object):
             f.write(item['weather'] + '\n')
             f.write(item['wind'] + '\n\n')
         return item
-
 
 # 爬取的信息保存到json方便其他程序员调用
 class W2json(object):
