@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from doubanbook.items import DoubanbookItem
+from scrapy_redis.spiders import RedisSpider
 
 class DoubanbookspiderSpider(scrapy.Spider):
+# class DoubanbookspiderSpider(RedisSpider):
     name = "doubanbookspider"
     allowed_domains = ["douban.com"]
+    # redis_key = 'doubanbookspider:start_urls'
     start_urls = ['https://book.douban.com/top250']
     url_list = []
     def parse(self, response):

@@ -89,3 +89,12 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+
+#Redis
+# SCHEDULER = 'scrapy_redis.scheduler.Scheduler'
+# SCHEDULER_PERSIST = True
+# SCHEDULER_QUEUE_CLASS = 'scrapy_redis.queue.SpiderPriorityQueue'
+# REDIS_URL = None  # 可有可无
+# REDIS_HOST = '127.0.0.1'
+# REDIS_PORT = 6379
