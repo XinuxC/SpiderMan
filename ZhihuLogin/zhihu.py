@@ -42,7 +42,7 @@ except:
 def getXSRF():
     index_url = 'https://www.zhihu.com'
     r = session.get(url=index_url,headers=base_headers)
-    print(r.text)
+    # print(r.text)
     # get_xsrf
     s = str(r.cookies)
     # print(type(s))
@@ -119,10 +119,6 @@ def login(account,password):
         # 下次可以使用 cookie 直接登录，不需要输入账号和密码
     session.cookies.save()
 
-try:
-    input = input()
-except:
-    pass
 
 if __name__ == '__main__':
     if isLogin():

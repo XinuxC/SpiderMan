@@ -91,11 +91,10 @@ def login(account,password):
             'captcha': get_captcha()
         }
     r = session.post(url=url,data=postDict,headers=headers)
-    print(r.text)
+    # print(r.text)
     with open("cookies.txt", 'w') as f:
         json.dump(session.cookies.get_dict(), f)
-    # with open("login.html", "wb") as f:
-    #     f.write(r.content)
+
 
 
 def  isLogin():
