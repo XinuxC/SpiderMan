@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:/python/SpiderMan/ZhihuLogin/.idea/ZhihuLogin.iml" filepath="D:/python/SpiderMan/ZhihuLogin/.idea/ZhihuLogin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zheyetest/.idea/zheye.iml" filepath="$PROJECT_DIR$/../zheyetest/.idea/zheye.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/zhihu.iml" filepath="$PROJECT_DIR$/.idea/zhihu.iml" />
+    </modules>
+  </component>
+</project>
