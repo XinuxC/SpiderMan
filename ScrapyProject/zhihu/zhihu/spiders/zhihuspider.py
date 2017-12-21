@@ -12,6 +12,7 @@ from PIL import Image
 from zhihu.items import  ZhihuQuestionItem
 from scrapy.loader import ItemLoader
 
+from zheye import zheye
 
 class ZhihuspiderSpider(scrapy.Spider):
     name = 'zhihuspider'
@@ -26,42 +27,83 @@ class ZhihuspiderSpider(scrapy.Spider):
     }
 
     def start_requests(self):
-        with open('cookies.txt') as f:
-            cookies = json.load(f)
-        return [scrapy.Request('https://www.zhihu.com/',headers= self.headers,cookies = cookies,callback=self.is_login)]
+        # 使用cookie,登录后直接开始请求start_urls
+        # with open('cookies.txt') as f:
+        #     cookies = json.load(f)
+        # return [scrapy.Request('https://www.zhihu.com/',headers= self.headers,cookies = cookies,callback=self.is_login)]
+
+        # 不使用cookie,进行下一步登录操作,登录后判断成功后再请求start_urls
         # return [scrapy.Request('https://www.zhihu.com/',headers= self.headers,callback=self.login)]
 
-    def login(self,response):
+        # 不使用cookie,选择倒立验证码登录方式
+        return [scrapy.Request('https://www.zhihu.com/',headers= self.headers,callback=self.reverse_login)]
+
+    # def login(self,response):
+    #     # 正常验证码登录
+    #     pattern = r'name="_xsrf" value="(.*?)"/>'
+    #     xsrf = re.findall(pattern, response.text, re.S | re.I)
+    #     if xsrf[0]:
+    #         post_data = {
+    #             '_xsrf':xsrf[0],
+    #             'phone_num':'18200590129',
+    #             'password':'chenyuejun900129',
+    #         }
+    #
+    #         t = str(int(time.time() * 1000))
+    #         # 正常验证码地址
+    #         captcha_url = 'https://www.zhihu.com/captcha.gif?r=' + t + "&type=login"
+    #         yield scrapy.Request(captcha_url, headers=self.headers, meta={'post_data':post_data}, callback=self.captcha_login)
+
+    # def captcha_login(self,response):
+    #     post_url = 'https://www.zhihu.com/login/phone_num'
+    #     post_data = response.meta.get('post_data')
+    #
+    #     with open('captcha.jpg', 'wb') as f:
+    #         f.write(response.body)
+    #     try:
+    #         im = Image.open('captcha.jpg')
+    #         im.show()
+    #         im.close()
+    #     except:
+    #         print(u'请到 %s 目录找到captcha.jpg 手动输入' % os.path.abspath('captcha.jpg'))
+    #     captcha = input('请输入验证码:')
+    #     post_data['captcha'] = captcha
+    #
+    #     return [scrapy.FormRequest(
+    #         url=post_url,
+    #         formdata=post_data,
+    #         headers=self.headers,
+    #         callback=self.is_login,
+    #     )]
+
+    def reverse_login(self,response):
+        # 倒立验证码登录
         pattern = r'name="_xsrf" value="(.*?)"/>'
         xsrf = re.findall(pattern, response.text, re.S | re.I)
         if xsrf[0]:
             post_data = {
-                '_xsrf':xsrf[0],
-                'phone_num':'18200590129',
-                'password':'chenyuejun900129',
+                '_xsrf': xsrf[0],
+                'phone_num': '18200590129',
+                'password': 'chenyuejun900129',
+                'captcha_type': 'cn',
+
             }
 
             t = str(int(time.time() * 1000))
-            # 手机登录验证码地址
-            captcha_url = 'https://www.zhihu.com/captcha.gif?r=' + t + "&type=login"
-            # captcha_url = 'https://www.zhihu.com/captcha.gif?r=' + t + "&type=login&lang=cn"  # 倒立验证码图片地址
-            yield scrapy.Request(captcha_url, headers=self.headers, meta={'post_data':post_data}, callback=self.captcha_login)
+            # 倒立验证码地址
+            captcha_url = 'https://www.zhihu.com/captcha.gif?r=' + t + "&type=login&lang=cn"
+            yield scrapy.Request(captcha_url, headers=self.headers, meta={'post_data': post_data},
+                                 callback=self.reverse_captcha_login)
 
-    def captcha_login(self,response):
+    def reverse_captcha_login(self,response):
         post_url = 'https://www.zhihu.com/login/phone_num'
         post_data = response.meta.get('post_data')
-
-        with open('captcha.jpg', 'wb') as f:
+        with open('captcha.gif', 'wb') as f:
             f.write(response.body)
-        try:
-            im = Image.open('captcha.jpg')
-            im.show()
-            im.close()
-        except:
-            print(u'请到 %s 目录找到captcha.jpg 手动输入' % os.path.abspath('captcha.jpg'))
-        captcha = input('请输入验证码:')
-        post_data['captcha'] = captcha
 
+        z = zheye()
+        positions = z.Recognize('captcha.gif')
+        post_data['captcha'] = '{"img_size":[200,44],"input_points":[[%.3f,%.2f],[%.3f,%.2f]]}' % (positions[0][1] /2,positions[0][0] /2 ,positions[1][1] /2,positions[1][0] /2)
         return [scrapy.FormRequest(
             url=post_url,
             formdata=post_data,
@@ -70,12 +112,15 @@ class ZhihuspiderSpider(scrapy.Spider):
         )]
 
     def is_login(self,response):
-        # login_info = json.loads(response.text)
-        # if 'msg' in login_info and login_info['msg'] == "登录成功":
-        #     for url in self.start_urls:
-        #         yield scrapy.Request(url=url,headers=self.headers,dont_filter=True)
-        for url in self.start_urls:
-            yield scrapy.Request(url=url, headers=self.headers, dont_filter=True)
+        # 不使用本地cookie登录时,验证是否登录成功
+        login_info = json.loads(response.text)
+        if 'msg' in login_info and login_info['msg'] == "登录成功":
+            for url in self.start_urls:
+                yield scrapy.Request(url=url,headers=self.headers,dont_filter=True)
+
+        #使用本地cookie登录后直接进行请求操作
+        # for url in self.start_urls:
+        #     yield scrapy.Request(url=url, headers=self.headers, dont_filter=True)
 
     def parse(self, response):
         # 提取所有问题url,跟踪进一步爬取
