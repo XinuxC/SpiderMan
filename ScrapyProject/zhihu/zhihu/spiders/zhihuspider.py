@@ -45,8 +45,8 @@ class ZhihuspiderSpider(scrapy.Spider):
     #     if xsrf[0]:
     #         post_data = {
     #             '_xsrf':xsrf[0],
-    #             'phone_num':'18200590129',
-    #             'password':'chenyuejun900129',
+    #             'phone_num':'*******',
+    #             'password':'*******',
     #         }
     #
     #         t = str(int(time.time() * 1000))
@@ -83,8 +83,8 @@ class ZhihuspiderSpider(scrapy.Spider):
         if xsrf[0]:
             post_data = {
                 '_xsrf': xsrf[0],
-                'phone_num': '18200590129',
-                'password': 'chenyuejun900129',
+                'phone_num': '',
+                'password': '',
                 'captcha_type': 'cn',
 
             }

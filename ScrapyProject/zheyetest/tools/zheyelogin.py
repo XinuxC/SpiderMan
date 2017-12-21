@@ -52,8 +52,8 @@ def login():
 
     post_data = {
         '_xsrf': getXSRF(),
-        'phone_num': '18200590129',
-        'password': 'chenyuejun900129',
+        'phone_num': '',
+        'password': '',
         'captcha_type':'cn',
         'captcha': '{"img_size":[200,44],"input_points":[[%.3f,%.2f],[%.3f,%.2f]]}' % (positions[0][1] /2,positions[0][0] /2 ,positions[1][1] /2,positions[1][0] /2)
     }
