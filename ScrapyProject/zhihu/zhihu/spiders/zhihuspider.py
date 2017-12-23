@@ -36,7 +36,8 @@ class ZhihuspiderSpider(scrapy.Spider):
         # return [scrapy.Request('https://www.zhihu.com/',headers= self.headers,callback=self.login)]
 
         # 不使用cookie,选择倒立验证码登录方式
-        return [scrapy.Request('https://www.zhihu.com/',headers= self.headers,callback=self.reverse_login)]
+        # return [scrapy.Request('https://www.zhihu.com/',headers= self.headers,callback=self.reverse_login)]
+        return [scrapy.Request('https://www.zhihu.com/',callback=self.reverse_login)]
 
     # def login(self,response):
     #     # 正常验证码登录
@@ -45,8 +46,8 @@ class ZhihuspiderSpider(scrapy.Spider):
     #     if xsrf[0]:
     #         post_data = {
     #             '_xsrf':xsrf[0],
-    #             'phone_num':'*******',
-    #             'password':'*******',
+    #             'phone_num':'18200590129',
+    #             'password':'chenyuejun900129',
     #         }
     #
     #         t = str(int(time.time() * 1000))
@@ -83,8 +84,8 @@ class ZhihuspiderSpider(scrapy.Spider):
         if xsrf[0]:
             post_data = {
                 '_xsrf': xsrf[0],
-                'phone_num': '',
-                'password': '',
+                'phone_num': '18200590129',
+                'password': 'chenyuejun900129',
                 'captcha_type': 'cn',
 
             }
@@ -103,13 +104,31 @@ class ZhihuspiderSpider(scrapy.Spider):
 
         z = zheye()
         positions = z.Recognize('captcha.gif')
-        post_data['captcha'] = '{"img_size":[200,44],"input_points":[[%.3f,%.2f],[%.3f,%.2f]]}' % (positions[0][1] /2,positions[0][0] /2 ,positions[1][1] /2,positions[1][0] /2)
-        return [scrapy.FormRequest(
-            url=post_url,
-            formdata=post_data,
-            headers=self.headers,
-            callback=self.is_login,
-        )]
+        if len(positions) == 2:
+            if positions[0][1] < positions[1][1] :
+                post_data['captcha'] = '{"img_size":[200,44],"input_points":[[%.3f,%.2f],[%.3f,%.2f]]}' % (positions[0][1] /2,positions[0][0] /2 ,positions[1][1] /2,positions[1][0] /2)
+                return [scrapy.FormRequest(
+                    url=post_url,
+                    formdata=post_data,
+                    headers=self.headers,
+                    callback=self.is_login,
+                )]
+            else:
+                post_data['captcha'] = '{"img_size":[200,44],"input_points":[[%.3f,%.2f],[%.3f,%.2f]]}' % (positions[1][1] / 2, positions[1][0] / 2,positions[0][1] / 2, positions[0][0] / 2)
+                return [scrapy.FormRequest(
+                    url=post_url,
+                    formdata=post_data,
+                    headers=self.headers,
+                    callback=self.is_login,
+                )]
+        else:
+            post_data['captcha'] = '{"img_size":[200,44],"input_points":[[%.3f,%.2f]}' % (positions[0][1] / 2, positions[0][0] / 2)
+            return [scrapy.FormRequest(
+                url=post_url,
+                formdata=post_data,
+                headers=self.headers,
+                callback=self.is_login,
+            )]
 
     def is_login(self,response):
         # 不使用本地cookie登录时,验证是否登录成功
