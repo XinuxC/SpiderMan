@@ -11,7 +11,8 @@ from selenium import webdriver
 import time
 
 # browser = webdriver.Chrome()
-browser = webdriver.Chrome(r'C:\Users\XinuxC\chromedriver_win32\chromedriver.exe')
+# browser = webdriver.Chrome(r'C:\Users\XinuxC\chromedriver_win32\chromedriver.exe')
+browser = webdriver.Chrome(r'C:\Users\30594\chromedriver\chromedriver.exe')
 browser.set_page_load_timeout(30)
 browser.get('http://www.17huo.com/search.html?sq=2&keyword=%E7%BE%8A%E6%AF%9B')
 page_info = browser.find_element_by_css_selector('body > div.wrap > div.pagem.product_list_pager > div')
@@ -39,3 +40,4 @@ for page in range(pages):
         except:
             print(good.text)
 
+browser.close()

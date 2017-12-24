@@ -11,7 +11,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-broswer = webdriver.Chrome(r'C:\Users\XinuxC\chromedriver_win32\chromedriver.exe')
+# broswer = webdriver.Chrome(r'C:\Users\XinuxC\chromedriver_win32\chromedriver.exe')
+broswer = webdriver.Chrome(r'C:\Users\30594\chromedriver\chromedriver.exe')
 wait = WebDriverWait(broswer,30)
 def login():
     username = input("输入用户名:")
