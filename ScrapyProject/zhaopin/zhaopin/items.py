@@ -9,8 +9,7 @@ import scrapy
 from scrapy.loader.processors import MapCompose,TakeFirst,Join
 from scrapy.loader import ItemLoader
 from zhaopin.utils import addr_strip,remove_backlash,url_md5,get_time
-from w3lib.html import remove_tags
-
+from w3lib.html import remove_tags  #用来去除提取到的数据里面的html标签
 
 class  ZhaopinItemLoader(ItemLoader):
     # 自定义itemloader,默认获取列表第一个内容

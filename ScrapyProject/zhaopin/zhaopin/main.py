@@ -8,7 +8,6 @@
 # @Desc  :
 
 from scrapy.cmdline import execute
-
 import os
 import sys
 

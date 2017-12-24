@@ -7,7 +7,6 @@
 
 from scrapy import signals
 
-
 class ZhaopinSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
@@ -54,3 +53,4 @@ class ZhaopinSpiderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+

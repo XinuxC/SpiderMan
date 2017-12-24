@@ -13,14 +13,8 @@ class LagouSpider(CrawlSpider):
     allowed_domains = ['www.lagou.com']
     start_urls = ['https://www.lagou.com/zhaopin/Python/']
 
-    headers = {
-        # 'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
-        # 'User-Agent': 'User-Agent:Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5',
-    }
-
     rules = (
-        # Rule(LinkExtractor(allow=(r'zhaopin/.*',)),follow=True),
+        Rule(LinkExtractor(allow=(r'zhaopin/.*',)),follow=True),
         Rule(LinkExtractor(allow=(r'gongsi/j\d+.html',)),follow=True),
         Rule(LinkExtractor(allow=(r'jobs/\d+.html',)), callback='parse_item', follow=True),
     )
@@ -35,7 +29,7 @@ class LagouSpider(CrawlSpider):
         # 使用cookie,登录后直接开始请求start_urls
         with open('cookies.txt') as f:
             cookies = json.load(f)
-        return [scrapy.Request('https://www.lagou.com/zhaopin/Python/',headers= self.headers,cookies = cookies)]
+        return [scrapy.Request('https://www.lagou.com/zhaopin/Python/',cookies = cookies)]
 
     def parse_item(self, response):
         i = {}

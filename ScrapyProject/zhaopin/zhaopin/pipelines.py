@@ -13,11 +13,11 @@ class ZhaopinPipeline(object):
 
 class MysqlTwistedPipeline(object):
     def __init__(self, dbpool):
-        self.dbpool = dbpool
+        self.db_pool = dbpool
 
     @classmethod
     def from_settings(cls, settings):
-        dbparams = dict(
+        db_params = dict(
             host=settings['MYSQL_HOST'],
             db=settings['MYSQL_DBNAME'],
             user=settings['MYSQL_USER'],
@@ -26,12 +26,12 @@ class MysqlTwistedPipeline(object):
             cursorclass=pymysql.cursors.DictCursor,
         )
 
-        dbpool = adbapi.ConnectionPool('pymysql', **dbparams)
-        return cls(dbpool)
+        db_pool = adbapi.ConnectionPool('pymysql', **db_params)
+        return cls(db_pool)
 
     def process_item(self,item,spider):
         # 使用twisted将插入变成异步执行
-        query = self.dbpool.runInteraction(self.do_insert, item)
+        query = self.db_pool.runInteraction(self.do_insert, item)
         query.addErrback(self.handle_error, item, spider)
 
     def handle_error(self, failure, item, spider):
