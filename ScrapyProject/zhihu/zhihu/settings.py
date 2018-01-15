@@ -92,8 +92,8 @@ ITEM_PIPELINES = {
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 
-MYSQL_HOST = '219.234.147.220'
+MYSQL_HOST = 'x.x.x.x'
 MYSQL_USER = 'root'
-MYSQL_PASSWORD = 'mysqlforgxsn@210'
+MYSQL_PASSWORD = '*********'
 MYSQL_DBNAME = 'pymysql'
 
